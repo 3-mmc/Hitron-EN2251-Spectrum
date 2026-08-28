@@ -1,0 +1,34 @@
+# /data/rc - bootstrap for the repurposed BCM3390 minimal base.
+# The board boots (via BOLT XARGS="init=/bin/sh") straight to a bare root
+# shell with nothing mounted but / (ro squashfs) and /dev (devtmpfs).
+# Bring the environment up by sourcing this file. At the boot prompt run:
+#
+#   mount -t proc proc /proc; mount -t sysfs sys /sys; \
+#     ubiattach -m 10 -d 1 && mount -t ubifs ubi1:data /mnt && . /mnt/rc
+#
+# /sys must be mounted BEFORE ubiattach (busybox ubiattach reads
+# /sys/class/ubi to detect UBI, else "UBI is not present in the system").
+# mtd10 = flash0.rgnonvol0 = the "data" UBI volume; /mnt is an existing
+# mountpoint on the ro rootfs, so mounting onto it needs no write access.
+
+mount -t proc  proc  /proc 2>/dev/null
+mount -t sysfs sys   /sys  2>/dev/null
+mount -t tmpfs tmpfs /tmp  2>/dev/null
+mount -t tmpfs tmpfs /var  2>/dev/null
+mkdir -p /var/run /var/log 2>/dev/null
+
+hostname bcm3390 2>/dev/null
+ip link set lo up 2>/dev/null || ifconfig lo up 2>/dev/null
+
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export HOME=/tmp
+export PS1='bcm3390:\w# '
+
+echo
+echo "  BCM3390 minimal userspace  --  RG/DOCSIS stack NOT started"
+echo "  rootfs : read-only squashfs (do not expect to write to /)"
+echo "  scratch: /tmp  (tmpfs, ~178M)      persistent: /mnt (this volume, ~370K)"
+echo "  net    : lo up; bring a NIC up for your project, e.g."
+echo "             ip link set eth0 up && udhcpc -i eth0"
+echo "  NOTE   : do NOT 'cat /dev/watchdog' or open it - opening ARMS the timer."
+echo

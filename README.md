@@ -195,16 +195,64 @@ as found. See `tools/revert.py` (also covers the offline-via-BOLT route) and
 
 ---
 
+## Repurposing: a clean minimal base
+
+To reuse the board for a new project without the Spectrum firmware in the way,
+the persistent change is made at the bootloader instead of the login script:
+
+```
+BOLT> setenv -p XARGS "init=/bin/sh"
+```
+
+`STARTUP` appends `$XARGS` to the kernel command line, so every boot now goes
+kernel → **`/bin/sh` as PID 1** and stops. None of the RG/DOCSIS userspace runs:
+no daemons, no monitors, no login. Measured result vs. stock: **15 MB used /
+345 MB free** (stock used 31 MB), zero `snmpd`/`lattice`/`powerman`/`rmond`/
+`getty`, and `/proc/cmdline` ends in `... coherent_pool=1M init=/bin/sh`.
+
+A fully hands-off *script* init (`init=/data/init.sh`) is **not** possible here:
+at `init=` time `/data` isn't mounted yet, and the rootfs is a read-only,
+secure-boot-signed squashfs, so there is nowhere to place a custom init that the
+kernel can exec. `init=/bin/sh` sidesteps that — the interpreter is already on
+the rootfs — and it can't crash PID 1 because there is no script to fail.
+
+Bring the environment up by sourcing [`board/rc`](board/rc) (shipped to
+`/data/rc`). At the bare `sh-3.2#` prompt:
+
+```sh
+mount -t proc proc /proc; mount -t sysfs sys /sys; \
+  ubiattach -m 10 -d 1 && mount -t ubifs ubi1:data /mnt && . /mnt/rc
+```
+
+`/sys` must be mounted **before** `ubiattach` — busybox `ubiattach` reads
+`/sys/class/ubi` to detect UBI, otherwise it prints *"UBI is not present in the
+system"*. `rc` then mounts `/tmp` + `/var` (tmpfs), sets the hostname, brings up
+`lo`, and prints a banner. Scratch space is the 178 MB `/tmp` tmpfs; the rootfs
+stays read-only; `/mnt` is the ~370 KB persistent data volume.
+
+Deploy files to the board over the console with `tools/deploy_file.py <local>
+<remote>` (here-doc transfer, no network needed).
+
+> **Future option (not done here):** the running kernel does *not* dm-verity the
+> rootfs (`root=/dev/ubiblock0_0`, no verity in cmdline), so a full custom
+> userspace could be booted by writing your own rootfs to a spare NAND volume and
+> pointing `root=` at it — more invasive, and out of scope for this write-up.
+
+---
+
 ## `tools/`
 
 | Script | Writes to port? | Purpose |
 |---|---|---|
-| `baudscan.py` | no | Sweep common bauds, score which yields sane text |
-| `capture.py`  | no | Listen-only timestamped boot capture (`.bin` + `.log`) |
-| `breakin.py`  | yes (Ctrl-C flood) | Interrupt BOLT autoboot to reach `BOLT>` |
-| `talk.py`     | yes | Send lines and print the reply (send-expect helper) |
-| `bootsh.py`   | yes | Set `XARGS=init=/bin/sh` and boot to a root shell |
-| `revert.py`   | no | Prints the exact revert commands |
+| `baudscan.py`    | no | Sweep common bauds, score which yields sane text |
+| `capture.py`     | no | Listen-only timestamped boot capture (`.bin` + `.log`) |
+| `breakin.py`     | yes (Ctrl-C flood) | Interrupt BOLT autoboot to reach `BOLT>` |
+| `talk.py`        | yes | Send lines and print the reply (send-expect helper) |
+| `bootsh.py`      | yes | Set `XARGS=init=/bin/sh` (RAM only) and boot to a root shell |
+| `deploy_file.py` | yes | Push a local file to the board via a here-doc over serial |
+| `revert.py`      | no | Prints the exact revert commands |
+
+`board/rc` is the on-device bootstrap sourced after a minimal boot.
 
 ---
 

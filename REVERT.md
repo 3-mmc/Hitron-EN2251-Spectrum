@@ -36,6 +36,30 @@ sync; umount /dev/d; ubidetach -d 1
 reboot
 ```
 
+## If you also set up the minimal custom base
+
+Repurposing added two more persistent changes: the BOLT env var
+`XARGS="init=/bin/sh"` and the file `/data/rc`. To undo them and return to the
+stock Spectrum firmware boot, break into BOLT (`python3 tools/breakin.py`) and:
+
+```
+BOLT> unsetenv -p XARGS
+BOLT> printenv        # confirm XARGS is gone
+BOLT> reboot
+```
+
+Then, from the (stock) rooted console, optionally tidy the data volume:
+
+```sh
+rm -f /data/rc          # remove the bootstrap
+rm -f /data/.nologin    # and this to restore the login prompt (full revert)
+sync
+```
+
+Removing `XARGS` alone returns the board to the stock firmware while keeping the
+`.nologin` root console; removing `.nologin` as well restores a byte-for-byte
+as-found unit.
+
 ## What is NOT part of the modem revert
 
 The Raspberry Pi capture host had `dtoverlay=disable-bt` added to
