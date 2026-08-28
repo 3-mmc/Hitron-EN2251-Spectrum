@@ -1,0 +1,382 @@
+CPU 01
+BCM33900010
+PRID33900010
+v5.03
+RR:00000001
+BFW
+AVS init...
+B11
+STB V=0000282f D=00000232
+DCM V=00002860 D=000002eb
+AVS init OK
+AVS load:select_image: addr_offset: 00005800 part_offset: 00000000 bootStatus: 2a002b00
+AVS load_code offset =00005800
+LOADED
+AVS: overtemp mon ON
+I2C @ f040a400.
+WBID: no ack!
+
+using board #q
+OTP Market ID        = 00000000
+FSBL Market ID       = 00001b00
+Market ID Mask       = 00ffff00
+Secure Boot
+MARKET ID VALIDATION : Generic Mode - PASS
+MEMSYS-ALT
+MEMSYS AUTHENTICATION: OK
+SHMOO 03030100 BLD:memsys_3.3.0.0-5-gbbc1e43a0 HW:hpg0_generic V:3.3.1.0
+MCB: FLEX
+AVS start:status=000000ff
+STB: Current voltage=00000390(912)
+ temperature=0000c3e3(50147)
+ PV=0000034f(847)
+ MV=00000387(903)
+DCD: Current voltage=0000038d(909)
+ temperature=0000c3e3(50147)
+ PV=0000034d(845)
+ MV=00000383(899)
+AVS FW rev=30313978 [0.1.9.x]
+OK
+DDR0: MCB#2-5 !@ ffe0e540 <= ffe0d948 MEMSYS-0 @ f1500000 
+ramSize =   00000200
+DDR SCRAMBLER ENABLED
+OK
+Secure boot detected
+COPY CODE... DONE
+BOLT VERSION(FSBL): v5.03
+BOLT VERSION(SSBL): v5.03
+SSBL INTEGRITY: OK
+SSBL AUTHENTICATION: OK
+SSBL
+PINMUX
+CACHE FLUSH OK
+MMU ON
+CACHE FLUSH OK
+_fbss  0706a908
+_ebss  0706b2e0
+_end   0706b300
+HEAP @ 07100000
+STACK @ 07fffff8
+ARCH: CONFIG OK
+CLR BSS 0706a908 to 0706b2e0 OK
+CLR SRAM  OK
+CACHE FLUSH OK
+CPU CLKSET OK
+GO!
+
+[33;1m    ,/   [0m 
+[33;1m  ,'/___,[0m BOLT v5.03 v5.03_B1 LOCAL BUILD
+[33;1m.'__  ,' [0m (2021-08-05 10:46:31 ubee@ubee-B560M-AORUS-ELITE)
+[33;1m   /,'   [0m Copyright (C) 2021 Broadcom Limited
+[33;1m  /'     [0m 
+[0m
+Board: BCM93390VVCM
+SYS_CTRL: product=3390, family=3390b0, strap=00004607, 
+otp @ 0xf0404030 = 0x062000e0: en_cr(0x00000060) en_testport(0x00000080) usb_p1_disable(0x00200000) 
+otp @ 0xf0404034 = 0x00010217: moca_20_disable(0x00000004) moca_bonded_disable(0x00010000) moca_disable(0x00000001) mtsif_enc_ctrl_disable(0x00000200) pcie0_disable(0x00000010) pcie1_disable(0x00000002) 
+CPU: 2x A15, 1503 MHz
+SCB: 324 MHz
+DDR0 @ 933MHz
+RESET CAUSE: 0x000001 power_on (1 of 32 possible causes)
+******************************************
+Automatic startup canceled via Ctrl-C
+******************************************
+
+CS0: ONFI NAND, 256MB, 128kB blocks, 2048B page, 27B OOB, BCH-8
+[31;1mMAC ADDRESS CHECKSUM FAILED[0m
+[31;1mMAC ADDRESS MUST BE PROGRAMMED; use macprog command[0m
+RTS0: 0x21501004, 1 clients, ok
+rts 01 [FAKE_NO_RTS]		*default
+BOX MODE: 1
+AVS: park check
+AVS: temperature monitoring enabled
+AVS: STB: V=0.909V, T=+51.121C, PV=0.847V, MV=0.903V, FW=30313978 [0.1.9.x]
+AVS: DCD: V=0.908V, T=+50.634C, PV=0.845V, MV=0.899V
+USB @ 0xf1000200: IPP is active low, IOC is negative polarity
+[33;1mWatchdog is disabled!
+[0mBOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> ^C
+BOLT> 

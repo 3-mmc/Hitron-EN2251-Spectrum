@@ -1,0 +1,1011 @@
+[    0.601] echo b > /proc/sysrq-trigger
+[    0.601] [  353.803478] sysrq: Resetting
+[    0.601] [  353.807590] CPU0: stopping
+[    0.601] [  353.810329] CPU: 0 PID: 0 Comm: swapper/0 Not tainted 4.9.248-Prod_21.2 #9
+[    0.601] [  353.817230] Hardware name: Broadcom STB (Flattened Device Tree)
+[    0.602] [  353.823215] [<80210718>] (unwind_backtrace) from [<8020bb64>] (show_stack+0x10/0x14)
+[    0.602] [  353.831003] [<8020bb64>] (show_stack) from [<804d5f48>] (dump_stack+0x90/0xa4)
+[    0.602] [  353.838262] [<804d5f48>] (dump_stack) from [<8020f51c>] (handle_IPI+0x174/0x194)
+[    0.602] [  353.845692] [<8020f51c>] (handle_IPI) from [<802015dc>] (gic_handle_irq+0x94/0x98)
+[    0.602] [  353.853293] [<802015dc>] (gic_handle_irq) from [<8020c6b8>] (__irq_svc+0x58/0x74)
+[    0.602] [  353.860799] Exception stack(0x80e03f30 to 0x80e03f78)
+[    0.602] [  353.865873] 3f20:                                     00000001 00000000 00000000 8021a820
+[    0.602] [  353.874079] 3f40: 80e00000 80e04ffc 00000001 80e05060 00000000 00000000 80c56038 80e05068
+[    0.602] [  353.882283] 3f60: 600c0013 80e03f80 80208f48 80208f4c 600c0013 ffffffff
+[    0.602] [  353.888935] [<8020c6b8>] (__irq_svc) from [<80208f4c>] (arch_cpu_idle+0x38/0x3c)
+[    0.702] [  353.896368] [<80208f4c>] (arch_cpu_idle) from [<8025bc24>] (cpu_startup_entry+0x18c/0x20c)
+[    0.702] [  353.904677] [<8025bc24>] (cpu_startup_entry) from [<80c00d4c>] (start_kernel+0x448/0x474)
+[    2.004] CPU 01
+[    2.004] BCM33900010
+[    2.004] PRID33900010
+[    2.004] v5.03
+[    2.004] RR:00002000
+[    2.004] BFW
+[    2.004] AVS init...
+[    3.006] B11
+[    3.006] STB V=00002823 D=00000231
+[    3.006] DCM V=00002823 D=000002e6
+[    3.006] AVS init OK
+[    3.006] AVS load:select_image: addr_offset: 00005800 part_offset: 00000000 bootStatus: 2a052b00
+[    3.007] AVS load_code offset =00005800
+[    3.007] LOADED
+[    3.007] AVS: overtemp mon ON
+[    3.007] I2C @ f040a400.
+[    3.007] WBID: no ack!
+[    3.007] using board #q
+[    3.007] OTP Market ID        = 00000000
+[    3.007] FSBL Market ID       = 00001b00
+[    3.007] Market ID Mask       = 00ffff00
+[    3.007] Secure Boot
+[    3.007] MARKET ID VALIDATION : Generic Mode - PASS
+[    3.007] MEMSYS-ALT
+[    3.909] MEMSYS AUTHENTICATION: OK
+[    3.910] SHMOO 03030100 BLD:memsys_3.3.0.0-5-gbbc1e43a0 HW:hpg0_generic V:3.3.1.0
+[    3.910] MCB: FLEX
+[    4.912] AVS start:status=000000ff
+[    4.912] STB: Current voltage=00000391(913)
+[    4.912]  temperature=0000ba60(47712)
+[    4.912]  PV=00000350(848)
+[    4.912]  MV=00000386(902)
+[    4.912] DCD: Current voltage=00000393(915)
+[    4.912]  temperature=0000b879(47225)
+[    4.913]  PV=00000349(841)
+[    4.913]  MV=00000388(904)
+[    4.913] AVS FW rev=30313978 [0.1.9.x]
+[    4.913] OK
+[    5.013] DDR0: MCB#2-5 !@ ffe0e540 <= ffe0d948 MEMSYS-0 @ f1500000 
+[    5.715] ramSize =   00000200
+[    5.715] DDR SCRAMBLER ENABLED
+[    5.715] OK
+[    5.715] Secure boot detected
+[    5.915] COPY CODE... DONE
+[    5.915] BOLT VERSION(FSBL): v5.03
+[    6.016] BOLT VERSION(SSBL): v5.03
+[    6.116] SSBL INTEGRITY: OK
+[    7.720] SSBL AUTHENTICATION: OK
+[    7.720] SSBL
+[    7.720] PINMUX
+[    7.820] CACHE FLUSH OK
+[    7.820] MMU ON
+[    7.820] CACHE FLUSH OK
+[    7.820] _fbss  0706a908
+[    7.820] _ebss  0706b2e0
+[    7.820] _end   0706b300
+[    7.820] HEAP @ 07100000
+[    7.820] STACK @ 07fffff8
+[    7.820] ARCH: CONFIG OK
+[    7.821] CLR BSS 0706a908 to 0706b2e0 OK
+[    7.821] CLR SRAM  OK
+[    7.821] CACHE FLUSH OK
+[    7.921] CPU CLKSET OK
+[    7.921] GO!
+[    7.921] [33;1m    ,/   [0m 
+[    7.921] [33;1m  ,'/___,[0m BOLT v5.03 v5.03_B1 LOCAL BUILD
+[    7.921] [33;1m.'__  ,' [0m (2021-08-05 10:46:31 ubee@ubee-B560M-AORUS-ELITE)
+[    7.922] [33;1m   /,'   [0m Copyright (C) 2021 Broadcom Limited
+[    7.922] [33;1m  /'     [0m 
+[    7.922] [0m
+[    7.922] Board: BCM93390VVCM
+[    7.922] SYS_CTRL: product=3390, family=3390b0, strap=00004607, 
+[    7.922] otp @ 0xf0404030 = 0x062000e0: en_cr(0x00000060) en_testport(0x00000080) usb_p1_disable(0x00200000) 
+[    7.922] otp @ 0xf0404034 = 0x00010217: moca_20_disable(0x00000004) moca_bonded_disable(0x00010000) moca_disable(0x00000001) mtsif_enc_ctrl_disable(0x00000200) pcie0_disable(0x00000010) pcie1_disable(0x00000002) 
+[    7.923] CPU: 2x A15, 1503 MHz
+[    7.923] SCB: 324 MHz
+[    7.923] DDR0 @ 933MHz
+[    7.923] RESET CAUSE: 0x002000 software_master (1 of 32 possible causes)
+[    7.923] CS0: ONFI NAND, 256MB, 128kB blocks, 2048B page, 27B OOB, BCH-8
+[    8.324] [31;1mMAC ADDRESS CHECKSUM FAILED[0m
+[    8.324] [31;1mMAC ADDRESS MUST BE PROGRAMMED; use macprog command[0m
+[    8.324] RTS0: 0x21501004, 1 clients, ok
+[    8.324] rts 01 [FAKE_NO_RTS]		*default
+[    8.324] BOX MODE: 1
+[    8.324] AVS: park check
+[    8.324] AVS: temperature monitoring enabled
+[    8.325] AVS: STB: V=0.910V, T=+47.712C, PV=0.848V, MV=0.902V, FW=30313978 [0.1.9.x]
+[    8.325] AVS: DCD: V=0.912V, T=+47.712C, PV=0.841V, MV=0.904V
+[    8.926] USB @ 0xf1000200: IPP is active low, IOC is negative polarity
+[    9.127] [33;1mWatchdog is disabled!
+[    9.127] [0mExecuting STARTUP...
+[    9.127] Loader:raw Filesys:raw Dev:flash0.devtree0 File:(null) Options:(null)
+[    9.127] Loading: ....
+[    9.127]  65536 bytes read
+[    9.127] Partition flash0.devtree0 size 262144
+[    9.227] Searching for matching DTB
+[    9.227] Found matching DTB rg.3390v0-vvcm.dtb
+[    9.227] Loading DTB rg.3390v0-vvcm.dtb
+[    9.227] Loader:zimg Filesys:raw Dev:flash0.kernel0 File:(null) Options:ubi.mtd=flash0.rg0 ubi.block=0,rootfs rootfstype=squashfs root=/dev/ubiblock0_0 ro platformboot ubifs_data coherent_pool=1M 
+[    9.828] Reading 3400008 bytes from zImage...........
+[    9.828] No OPPs generated by bolt
+[    9.828] Starting program at 0x8000 (DTB @ 0x7627000)
+[   10.729] [    0.000000] Booting Linux on physical CPU 0x0
+[   10.731] [    0.000000] Linux version 4.9.248-Prod_21.2 (ubee@ubee-B560M-AORUS-ELITE) (gcc version 6.3.0 (crosstool-NG ) ) #9 SMP Thu Aug 25 11:21:18 CST 2022
+[   10.731] [    0.000000] CPU: ARMv7 Processor [420f00f3] revision 3 (ARMv7), cr=30c5387d
+[   10.731] [    0.000000] CPU: div instructions available: patching division code
+[   10.731] [    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+[   10.731] [    0.000000] OF: fdt:Machine model: BCM93390VVCM
+[   10.731] [    0.000000] OF: fdt:moving dtb from 0x0000000007627000 to 0x0000000000008000
+[   10.731] [    0.000000] Memory policy: Data cache writealloc
+[   10.731] [    0.000000] percpu: Embedded 13 pages/cpu s22092 r8192 d22964 u53248
+[   10.731] [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 93980
+[   10.832] [    0.000000] Kernel command line: ubi.mtd=flash0.rg0 ubi.block=0,rootfs rootfstype=squashfs root=/dev/ubiblock0_0 ro platformboot ubifs_data coherent_pool=1M 
+[   10.832] [    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[   10.832] [    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[   10.832] [    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[   10.832] [    0.000000] Memory: 362444K/378880K available (8192K kernel code, 284K rwdata, 1664K rodata, 2048K init, 207K bss, 16436K reserved, 0K cma-reserved)
+[   10.832] [    0.000000] Virtual kernel memory layout:
+[   10.832] [    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[   10.832] [    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[   10.832] [    0.000000]     vmalloc : 0xa0800000 - 0xff800000   (1520 MB)
+[   10.832] [    0.000000]     lowmem  : 0x80000000 - 0xa0000000   ( 512 MB)
+[   10.832] [    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+[   10.832] [    0.000000]       .text : 0x80008000 - 0x80a00000   (10208 kB)
+[   10.832] [    0.000000]       .init : 0x80c00000 - 0x80e00000   (2048 kB)
+[   10.832] [    0.000000]       .data : 0x80e00000 - 0x80e47078   ( 285 kB)
+[   10.933] [    0.000000]        .bss : 0x80e49000 - 0x80e7cf0c   ( 208 kB)
+[   10.933] [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[   10.933] [    0.000000] Hierarchical RCU implementation.
+[   10.933] [    0.000000] 	Build-time adjustment of leaf fanout to 32.
+[   10.933] [    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+[   10.933] [    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=2
+[   10.933] [    0.000000] NR_IRQS:16 nr_irqs:16 16
+[   10.933] [    0.000000] irq_brcmstb_l2: registered L2 intc (/rdb/interrupt-controller@f0403000, parent irq: 95)
+[   10.933] [    0.000000] irq_brcmstb_l2: registered L2 intc (/rdb/interrupt-controller@f04a1000, parent irq: 63)
+[   10.933] [    0.000000] irq_brcmstb_l2: registered L2 intc (/rdb/interrupt-controller@f04a1a00, parent irq: 64)
+[   10.933] [    0.000000] irq_brcmstb_l2: registered L2 intc (/rdb/interrupt-controller@f0410640, parent irq: 97)
+[   10.933] [    0.000000] irq_brcmstb_l2: registered L2 intc (/rdb/interrupt-controller@f0431200, parent irq: 50)
+[   10.933] [    0.000000] irq_bcm7120_l2: registered BCM7120 L2 intc (/rdb/interrupt-controller@f040a600, parent IRQ(s): 2)
+[   10.933] [    0.000000] irq_bcm7120_l2: registered BCM7120 L2 intc (/rdb/interrupt-controller@f0417200, parent IRQ(s): 3)
+[   11.034] [    0.000000] arm_arch_timer: Architected cp15 timer(s) running at 27.00MHz (virt).
+[   11.034] [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x63a1e71a3, max_idle_ns: 440795203123 ns
+[   11.034] [    0.000005] sched_clock: 56 bits at 27MHz, resolution 37ns, wraps every 4398046511093ns
+[   11.034] [    0.000012] Switching to timer-based delay loop, resolution 37ns
+[   11.034] [    0.000143] Calibrating delay loop (skipped), value calculated using timer frequency.. 54.00 BogoMIPS (lpj=27000)
+[   11.034] [    0.000153] pid_max: default: 32768 minimum: 301
+[   11.034] [    0.000215] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[   11.034] [    0.000221] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[   11.034] [    0.000640] CPU: Testing write buffer coherency: ok
+[   11.034] [    0.000662] CPU0: Spectre v2: using ICIALLU workaround
+[   11.034] [    0.000829] CPU0: update cpu_capacity 1024
+[   11.034] [    0.000836] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[   11.034] [    0.000894] Setting up static identity map for 0x200000 - 0x200060
+[   11.034] [    0.002723] brcmstb: biuctrl: MCP: Disabling write pairing
+[   11.034] [    0.003310] ubus 6 segment capture space: d3e00000 size 1000
+[   11.134] [    0.003317] ubus 2 segment capture space: d7e00000 size 1000
+[   11.135] [    0.004088] CPU1: update cpu_capacity 1024
+[   11.135] [    0.004092] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[   11.135] [    0.004095] CPU1: Spectre v2: using ICIALLU workaround
+[   11.135] [    0.004161] Brought up 2 CPUs
+[   11.135] [    0.004168] SMP: Total of 2 processors activated (108.00 BogoMIPS).
+[   11.135] [    0.004174] CPU: All CPU(s) started in SVC mode.
+[   11.135] [    0.004496] devtmpfs: initialized
+[   11.135] [    0.013312] VFP support v0.3: implementor 42 architecture 4 part 00 variant 0 rev 0
+[   11.135] [    0.013484] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[   11.135] [    0.013497] futex hash table entries: 512 (order: 3, 32768 bytes)
+[   11.135] [    0.013562] pinctrl core: initialized pinctrl subsystem
+[   11.135] [    0.014218] NET: Registered protocol family 16
+[   11.135] [    0.014990] DMA: preallocated 1024 KiB pool for atomic coherent allocations
+[   11.135] [    0.023219] cpuidle: using governor menu
+[   11.135] [    0.030521] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[   11.135] [    0.030532] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[   11.135] [    0.030660] /rdb/syscon@f04a2400: Broadcom Brahma-B15 readahead cache
+[   11.135] [    0.030795] Serial: AMBA PL011 UART driver
+[   11.235] [    0.030971] brcm-mbox driver v1.0
+[   11.236] [    0.045756] brcmstb-gpio f040a000.gpio: Registered 5 banks (GPIO(s): 0-159)
+[   11.236] [    0.046143] brcmstb-gpio f0417000.gpio: Registered 2 banks (GPIO(s): 160-223)
+[   11.236] [    0.046888] SCSI subsystem initialized
+[   11.236] [    0.047277] usbcore: registered new interface driver usbfs
+[   11.236] [    0.047328] usbcore: registered new interface driver hub
+[   11.236] [    0.047372] usbcore: registered new device driver usb
+[   11.236] [    0.049020] clocksource: Switched to clocksource arch_sys_counter
+[   11.236] [    0.050434] NET: Registered protocol family 2
+[   11.236] [    0.050736] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[   11.236] [    0.050761] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[   11.236] [    0.050805] TCP: Hash tables configured (established 4096 bind 4096)
+[   11.236] [    0.050833] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[   11.236] [    0.050847] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[   11.236] [    0.050932] NET: Registered protocol family 1
+[   11.236] [    0.051272] RPC: Registered named UNIX socket transport module.
+[   11.236] [    0.051278] RPC: Registered udp transport module.
+[   11.236] [    0.051282] RPC: Registered tcp transport module.
+[   11.336] [    0.051286] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[   11.337] [    0.051569] hw perfevents: enabled with armv7_cortex_a15 PMU driver, 7 counters available
+[   11.337] [    0.052990] workingset: timestamp_bits=30 max_order=17 bucket_order=0
+[   11.337] [    0.059678] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[   11.337] [    0.060351] NFS: Registering the id_resolver key type
+[   11.337] [    0.060372] Key type id_resolver registered
+[   11.337] [    0.060377] Key type id_legacy registered
+[   11.337] [    0.060388] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[   11.337] [    0.060410] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[   11.337] [    0.060763] fuse init (API version 7.26)
+[   11.337] [    0.062049] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[   11.337] [    0.062063] io scheduler noop registered
+[   11.337] [    0.062069] io scheduler deadline registered
+[   11.337] [    0.062198] io scheduler cfq registered (default)
+[   11.337] [    0.062451] brcm-gisb-arb f0400000.gisb-arb: registered irqs: 259, 260
+[   11.337] [    0.062908] brcmstb-usb-phy f1000200.usb-phy: Fixing incorrect #phy-cells in Device Tree node
+[   11.337] [    0.063376] brcmstb-usb-phy f1000200.usb-phy: Wake interrupt missing, system wake not supported
+[   11.437] [    0.063919] pinctrl-single f0410700.pinmux: 96 pins at pa a09f7700 size 12
+[   11.438] [    0.065001] pinctrl-single f04040a4.pinmux: 1568 pins at pa a09f90a4 size 196
+[   11.438] [    0.066987] brcm-waketimer f0417480.waketimer: wake IRQ found: 261
+[   11.438] [    0.067019] brcm-waketimer f0417480.waketimer: Unable to initialize timer IRQ
+[   11.438] [    0.067214] brcm-waketimer f0417480.waketimer: rtc core: registered brcmstb-waketmr as rtc0
+[   11.438] [    0.067229] brcm-waketimer f0417480.waketimer: registered wake timer
+[   11.438] [    0.067664] brcm-sram-dump f0410000.aon-ctrl: probed
+[   11.438] [    0.106975] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[   11.438] [    0.108753] console [ttyS0] disabled
+[   11.438] [    0.108793] f040a900.serial: ttyS0 at MMIO 0xf040a900 (irq = 108, base_baud = 5062500) is a 16550A
+[   11.438] [    0.848480] console [ttyS0] enabled
+[   11.438] [    0.852608] f040a940.serial: ttyS1 at MMIO 0xf040a940 (irq = 109, base_baud = 5062500) is a 16550A
+[   11.438] [    0.862145] f040a980.serial: ttyS2 at MMIO 0xf040a980 (irq = 110, base_baud = 5062500) is a 16550A
+[   11.438] [    0.871636] d3881800.serial: ttyS3 at MMIO 0xd3881800 (irq = 111, base_baud = 5062500) is a 16550A
+[   11.538] [    0.887842] brd: module loaded
+[   11.538] [    0.894653] loop: module loaded
+[   11.539] [    0.898893] brcmstb_nand f04a2800.nand: enabling FLASH_DMA
+[   11.539] [    0.904682] nand: device found, Manufacturer ID: 0xef, Chip ID: 0xda
+[   11.539] [    0.911054] nand: Unknown W29N02KV
+[   11.539] [    0.914467] nand: 256 MiB, SLC, erase size: 128 KiB, page size: 2048, OOB size: 128
+[   11.539] [    0.922145] brcmstb_nand f04a2800.nand: detected 256MiB total, 128KiB blocks, 2KiB pages, 27B OOB, 8-bit, BCH-8
+[   11.539] [    0.932567] Bad block table found at page 131008, version 0x01
+[   11.539] [    0.938705] Bad block table found at page 130944, version 0x01
+[   11.539] [    0.944938] 20 ofpart partitions found on MTD device brcmnand.0
+[   11.539] [    0.950877] Creating 20 MTD partitions on "brcmnand.0":
+[   11.539] [    0.956123] 0x000000000000-0x000000060000 : "flash0.fsbl"
+[   11.539] [    0.962230] 0x000000060000-0x000000100000 : "flash0.ssbl0"
+[   11.539] [    0.968338] 0x000000100000-0x0000001a0000 : "flash0.ssbl1"
+[   11.539] [    0.974445] 0x0000001a0000-0x0000001e0000 : "flash0.macadr"
+[   11.539] [    0.980611] 0x0000001e0000-0x000000220000 : "flash0.nvram"
+[   11.639] [    0.986733] 0x000000220000-0x000000260000 : "flash0.nvram1"
+[   11.640] [    0.992916] 0x000000260000-0x0000002a0000 : "flash0.devtree0"
+[   11.640] [    0.999283] 0x0000002a0000-0x0000002e0000 : "flash0.devtree1"
+[   11.640] [    1.005619] 0x0000002e0000-0x000000600000 : "flash0.cmnonvol0"
+[   11.640] [    1.012094] 0x000000600000-0x000000920000 : "flash0.cmnonvol1"
+[   11.640] [    1.018555] 0x000000920000-0x000000c40000 : "flash0.rgnonvol0"
+[   11.640] [    1.025042] 0x000000c40000-0x000000f60000 : "flash0.rgnonvol1"
+[   11.640] [    1.031519] 0x000000f60000-0x000001580000 : "flash0.kernel0"
+[   11.640] [    1.037827] 0x000001580000-0x000001ba0000 : "flash0.kernel1"
+[   11.640] [    1.044132] 0x000001ba0000-0x000002f00000 : "flash0.cm0"
+[   11.640] [    1.050145] 0x000002f00000-0x000004260000 : "flash0.cm1"
+[   11.640] [    1.056145] 0x000004260000-0x000004580000 : "flash0.debug"
+[   11.640] [    1.062251] 0x000004580000-0x00000a2c0000 : "flash0.rg0"
+[   11.640] [    1.068550] 0x00000a2c0000-0x000010000000 : "flash0.rg1"
+[   11.640] [    1.074883] 0x000000000000-0x000010000000 : "flash0"
+[   11.740] [    1.082119] brcmstb_qspi f0416000.spi: unable to get clock using defaults
+[   11.740] [    1.088954] brcmstb_qspi f0416000.spi: using mspi mode
+[   11.741] [    1.095416] libphy: Fixed MDIO Bus: probed
+[   11.741] [    1.099540] PPP generic driver version 2.4.2
+[   11.741] [    1.103961] PPP BSD Compression module registered
+[   11.741] [    1.108693] PPP Deflate Compression module registered
+[   11.741] [    1.113764] pegasus: v0.9.3 (2013/04/25), Pegasus/Pegasus II USB Ethernet driver
+[   11.741] [    1.121226] usbcore: registered new interface driver pegasus
+[   11.741] [    1.126945] usbcore: registered new interface driver asix
+[   11.741] [    1.132390] usbcore: registered new interface driver ax88179_178a
+[   11.741] [    1.138539] usbcore: registered new interface driver cdc_ether
+[   11.741] [    1.144429] usbcore: registered new interface driver cdc_ncm
+[   11.741] [    1.150246] xhci-brcm: xHCI Broadcom STB driver
+[   11.741] [    1.154965] ehci-brcm: EHCI Broadcom STB driver
+[   11.741] [    1.177063] ehci-brcm f1000300.ehci_v2: EHCI Host Controller
+[   11.841] [    1.182860] ehci-brcm f1000300.ehci_v2: new USB bus registered, assigned bus number 1
+[   11.841] [    1.200821] ehci-brcm f1000300.ehci_v2: irq 113, io mem 0xf1000300
+[   11.841] [    1.214029] ehci-brcm f1000300.ehci_v2: USB 2.0 started, EHCI 1.00
+[   11.841] [    1.220720] hub 1-0:1.0: USB hub found
+[   11.841] [    1.224507] hub 1-0:1.0: 1 port detected
+[   11.842] [    1.228786] ohci-brcm: OHCI Broadcom STB driver
+[   11.842] [    1.233432] ohci-brcm f1000400.ohci_v2: Broadcom STB OHCI controller
+[   11.842] [    1.239922] ohci-brcm f1000400.ohci_v2: new USB bus registered, assigned bus number 2
+[   11.842] [    1.247826] ohci-brcm f1000400.ohci_v2: irq 115, io mem 0xf1000400
+[   11.942] [    1.310477] hub 2-0:1.0: USB hub found
+[   11.942] [    1.314266] hub 2-0:1.0: 1 port detected
+[   11.942] [    1.318500] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[   11.942] [    1.325058] ehci-pci: EHCI PCI platform driver
+[   11.942] [    1.329556] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[   11.942] [    1.335760] ohci-pci: OHCI PCI platform driver
+[   11.942] [    1.340338] usbcore: registered new interface driver usb-storage
+[   11.942] [    1.346440] usbcore: registered new interface driver usbserial
+[   11.942] [    1.352318] usbcore: registered new interface driver option
+[   11.942] [    1.357930] usbserial: USB Serial support registered for GSM modem (1-port)
+[   11.942] [    1.365119] i2c /dev entries driver
+[   11.942] [    1.368895] brcmstb-i2c f040a300.i2c: using default port select:0
+[   11.942] [    1.376105] brcmstb-i2c f040a300.i2c:  @50000hz registered in polling mode using port select:0
+[   12.043] [    1.384774] brcmstb-i2c f040a400.i2c: using default port select:0
+[   12.043] [    1.391142] brcmstb-i2c f040a400.i2c:  @50000hz registered in polling mode using port select:0
+[   12.043] [    1.400089] brcmstb_thermal f0431500.thermal: registered AVS TMON of-sensor driver
+[   12.043] [    1.408056] bcm7038-wdt f040a200.watchdog: Registered BCM7038 Watchdog
+[   12.043] [    1.414893] bcm3390-wdt f040a100.watchdog: Registered bcm3390 watchdog
+[   12.043] [    1.421490] genirq: Flags mismatch irq 72. 00000000 (f10b0900.watchdog) vs. 00000000 (f040a100.watchdog)
+[   12.043] [    1.431281] bcm3390-wdt f10b0900.watchdog: Registered bcm3390 watchdog
+[   12.043] [    1.438576] cpufreq: CPU: Clock frequency 1503 MHz
+[   12.043] [    1.443811] sdhci: Secure Digital Host Controller Interface driver
+[   12.043] [    1.450025] sdhci: Copyright(c) Pierre Ossman
+[   12.043] [    1.454396] sdhci-pltfm: SDHCI platform and OF driver helper
+[   12.043] [    1.484630] brcm-fpm: FPM with 2 pool(s)
+[   12.143] [    1.505788] brcm-dqm: DQM device cpucomm with 96 Q's
+[   12.143] [    1.514755] rpc_service_init: initializing rpc_init service
+[   12.143] [    1.520831] rpc_register_functions registered rpc_init service with 1 functions
+[   12.143] [    1.528159] rpc_service_init: initializing rpc_misc service
+[   12.144] [    1.533781] rpc_service_init: initializing rpc_flash service
+[   12.144] [    1.539494] rpc_service_init: skipping inactive rpc_nonvol service
+[   12.144] [    1.545693] rpc_service_init: initializing rpc_erouter service
+[   12.144] [    1.551574] rpc_service_init: skipping inactive rpc_erouter_pm service
+[   12.144] [    1.558120] rpc_service_init: initializing rpc_wpsctl service
+[   12.144] [    1.563922] rpc_service_init: skipping inactive rpc_bash service
+[   12.144] [    1.569952] rpc_service_init: skipping inactive rpc_testu service
+[   12.144] [    1.576062] rpc_service_init: skipping inactive rpc_vendor service
+[   12.144] [    1.582351] dev-name = rg-cm
+[   12.144] [    1.585247] dqm = cpucomm
+[   12.144] [    1.587879] tx-q = 2h
+[   12.244] [    1.590164] rx-q = 3h
+[   12.244] [    1.592456] rpc_probe sent handshake message
+[   12.244] [    1.596760] dev-name = svm-cm
+[   12.244] [    1.599740] dqm = cpucomm
+[   12.244] [    1.602372] tx-q = 14h
+[   12.244] [    1.604741] rx-q = 15h
+[   12.244] [    1.607118] rpc_probe sent handshake message
+[   12.244] [    1.611642] brcm-ba driver v1.0
+[   12.244] [    1.615538] rpc_register_functions registered rpc_misc service with 14 functions
+[   12.244] [    1.623151] WBID driver version 1.0
+[   12.244] [    1.626658] WBID i2c client registered with addr:0x24
+[   12.245] [    1.631727] WBID(x.y):0.0 WBID:0x0
+[   12.245] [    1.635517] MDQM_Init
+[   12.245] [    1.637916] gre: GRE over IPv4 demultiplexor driver
+[   12.245] [    1.642812] ip_gre: GRE over IPv4 tunneling driver
+[   12.245] [    1.648792] NET: Registered protocol family 10
+[   12.245] [    1.654338] ip6_gre: GRE over IPv6 tunneling driver
+[   12.245] [    1.659614] NET: Registered protocol family 17
+[   12.245] [    1.664109] Bridge firewalling registered
+[   12.245] [    1.668168] 8021q: 802.1Q VLAN Support v1.8
+[   12.245] [    1.672387] Key type dns_resolver registered
+[   12.245] [    1.676746] Registering SWP/SWPB emulation handler
+[   12.245] [    1.684364] ubi0: attaching mtd17
+[   12.345] [    1.702224] random: fast init done
+[   12.746] [    2.187050] ubi0: scanning is finished
+[   12.846] [    2.200209] ubi0: attached mtd17 (name "flash0.rg0", size 93 MiB)
+[   12.846] [    2.206346] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[   12.846] [    2.213249] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[   12.846] [    2.220053] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+[   12.846] [    2.227034] ubi0: good PEBs: 746, bad PEBs: 0, corrupted PEBs: 0
+[   12.846] [    2.233054] ubi0: user volume: 1, internal volumes: 1, max. volumes count: 128
+[   12.846] [    2.240290] ubi0: max/mean erase counter: 2/1, WL threshold: 256, image sequence number: 1409907496
+[   12.846] [    2.249352] ubi0: available PEBs: 542, total reserved PEBs: 204, PEBs reserved for bad PEB handling: 40
+[   12.846] [    2.258773] ubi0: background thread "ubi_bgt0d" started, PID 1397
+[   13.247] [    2.668865] random: crng init done
+[   15.652] [    5.072877] block ubiblock0_0: created from ubi0:0(rootfs)
+[   15.652] [    5.078483] brcm-waketimer f0417480.waketimer: setting system clock to 1970-01-01 00:00:15 UTC (15)
+[   15.652] [    5.088413] xcvr-power: disabling
+[   15.752] [    5.094540] VFS: Mounted root (squashfs filesystem) readonly on device 254:0.
+[   15.752] [    5.103231] devtmpfs: mounted
+[   15.753] [    5.107289] Freeing unused kernel memory: 2048K
+[   16.053] starting pid 1409, tty '': '/etc/init.d/rcS'
+[   16.154] Mounting virtual filesystems
+[   16.254] ==============================
+[   16.254] CHIP:3390
+[   16.255] MANUFACT_BITS: 5CC7
+[   16.255] BOARD ID: 000000D0
+[   16.255] SUBSYSTEM: rg
+[   16.255] VFLASH: n
+[   16.255] EXTENSION: 
+[   16.255] KERNEL: vmlinuz-3390b0
+[   16.255] STARTUP: BA=y RC=y AUTO=y
+[   16.255] LATTICE: y
+[   16.255] ==============================
+[   16.355] Attaching MTD 10 to UBI device 1
+[   16.355] [    5.764634] ubi1: attaching mtd10
+[   16.355] [    5.783080] ubi1: scanning is finished
+[   16.355] [    5.795779] ubi1: attached mtd10 (name "flash0.rgnonvol0", size 3 MiB)
+[   16.456] [    5.802368] ubi1: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[   16.456] [    5.809293] ubi1: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[   16.456] [    5.816119] ubi1: VID header offset: 2048 (aligned 2048), data offset: 4096
+[   16.456] [    5.823116] ubi1: good PEBs: 25, bad PEBs: 0, corrupted PEBs: 0
+[   16.456] [    5.829070] ubi1: user volume: 1, internal volumes: 1, max. volumes count: 128
+[   16.457] [    5.836329] ubi1: max/mean erase counter: 4/2, WL threshold: 256, image sequence number: 391995046
+[   16.457] [    5.845323] ubi1: available PEBs: 0, total reserved PEBs: 25, PEBs reserved for bad PEB handling: 2
+[   16.457] [    5.854446] ubi1: background thread "ubi_bgt1d" started, PID 1497
+[   16.457] UBI device number 1, total 25 LEBs (3174400 byte[    5.864425] UBIFS (ubi1:0): background thread "ubifs_bgt1_0" started, PID 1500
+[   16.457] s, 3.0 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+[   16.457] Mounting flash0.rgnonvol0 (mtd 10) to /data
+[   16.557] [    5.963550] UBIFS (ubi1:0): UBIFS: mounted UBI device 1, volume 0, name "data"
+[   16.558] [    5.970886] UBIFS (ubi1:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[   16.558] [    5.980883] UBIFS (ubi1:0): FS size: 1269760 bytes (1 MiB, 10 LEBs), journal size 888833 bytes (0 MiB, 5 LEBs)
+[   16.558] [    5.990953] UBIFS (ubi1:0): reserved for root: 59973 bytes (58 KiB)
+[   16.658] [    5.997292] UBIFS (ubi1:0): media format: w4/r0 (latest is w4/r0), UUID C1B842DE-33EF-4637-9A09-CC5034DA86E6, small LPT model
+[   16.659] Attaching MTD 11 to UBI device 2
+[   16.659] [    6.087078] ubi2: attaching mtd11
+[   16.759] [    6.105598] ubi2: scanning is finished
+[   16.759] [    6.118175] ubi2: attached mtd11 (name "flash0.rgnonvol1", size 3 MiB)
+[   16.759] [    6.124760] ubi2: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[   16.760] [    6.131672] ubi2: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[   16.760] [    6.138496] ubi2: VID header offset: 2048 (aligned 2048), data offset: 4096
+[   16.760] [    6.145491] ubi2: good PEBs: 25, bad PEBs: 0, corrupted PEBs: 0
+[   16.760] [    6.151441] ubi2: user volume: 1, internal volumes: 1, max. volumes count: 128
+[   16.760] [    6.158697] ubi2: max/mean erase counter: 4/1, WL threshold: 256, image sequence number: 3415999436
+[   16.761] [    6.167779] ubi2: available PEBs: 0, total reserved PEBs: 25, PEBs reserved for bad PEB handling: 2
+[   16.761] [    6.176903] ubi2: background thread "ubi_bgt2d" started, PID 1521
+[   16.761] UBI device number 2, total 25 LEBs (3174400 byte[    6.186843] UBIFS (ubi2:0): background thread "ubifs_bgt2_0" started, PID 1524
+[   16.761] s, 3.0 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+[   16.761] Mounting flash0.rgnonvol1 (mtd 11) to /data_bak
+[   16.861] [    6.226415] UBIFS (ubi2:0): recovery needed
+[   16.962] [    6.314501] UBIFS (ubi2:0): recovery completed
+[   16.962] [    6.319264] UBIFS (ubi2:0): UBIFS: mounted UBI device 2, volume 0, name "databak"
+[   16.962] [    6.326831] UBIFS (ubi2:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[   16.962] [    6.336825] UBIFS (ubi2:0): FS size: 1269760 bytes (1 MiB, 10 LEBs), journal size 888833 bytes (0 MiB, 5 LEBs)
+[   16.963] [    6.346898] UBIFS (ubi2:0): reserved for root: 59973 bytes (58 KiB)
+[   16.963] [    6.353239] UBIFS (ubi2:0): media format: w4/r0 (latest is w4/r0), UUID F18E9770-AECB-4545-B421-F25CF36C520F, small LPT model
+[   18.065] Attaching MTD 14 to UBI device 3
+[   18.065] [    7.484270] ubi3: attaching mtd14
+[   18.165] [    7.590387] ubi3: scanning is finished
+[   18.166] [    7.602614] ubi3: attached mtd14 (name "flash0.cm0", size 19 MiB)
+[   18.266] [    7.608748] ubi3: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[   18.266] [    7.615652] ubi3: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[   18.266] [    7.622457] ubi3: VID header offset: 2048 (aligned 2048), data offset: 4096
+[   18.266] [    7.629439] ubi3: good PEBs: 155, bad PEBs: 0, corrupted PEBs: 0
+[   18.267] [    7.635462] ubi3: user volume: 1, internal volumes: 1, max. volumes count: 128
+[   18.267] [    7.642699] ubi3: max/mean erase counter: 2/1, WL threshold: 256, image sequence number: 1725427642
+[   18.267] [    7.651762] ubi3: available PEBs: 73, total reserved PEBs: 82, PEBs reserved for bad PEB handling: 40
+[   18.267] [    7.661017] ubi3: background thread "ubi_bgt3d" started, PID 1933
+[   18.267] UBI device number 3, total 155 LEBs (19681280 bytes, 18.8 MiB), available 73 LEBs (9269248 bytes, 8.8 MiB), LEB size 126976 bytes (124.0 KiB)
+[   18.268] Mounting flash0.cm0 (mtd 14) to /mnt/flash
+[   19.069] [    8.482582] block ubiblock3_0: created from ubi3:0(images)
+[   19.270] Attaching MTD 8 to UBI device 4
+[   19.270] [    8.681614] ubi4: attaching mtd8
+[   19.270] [    8.700825] ubi4: scanning is finished
+[   19.370] [    8.713471] ubi4: attached mtd8 (name "flash0.cmnonvol0", size 3 MiB)
+[   19.370] [    8.719980] ubi4: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[   19.371] [    8.726893] ubi4: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[   19.371] [    8.733717] ubi4: VID header offset: 2048 (aligned 2048), data offset: 4096
+[   19.371] [    8.740717] ubi4: good PEBs: 25, bad PEBs: 0, corrupted PEBs: 0
+[   19.371] [    8.746669] ubi4: user volume: 1, internal volumes: 1, max. volumes count: 128
+[   19.371] [    8.753926] ubi4: max/mean erase counter: 10/5, WL threshold: 256, image sequence number: 2282835133
+[   19.371] [    8.763099] ubi4: available PEBs: 0, total reserved PEBs: 25, PEBs reserved for bad PEB handling: 2
+[   19.371] [    8.772220] ubi4: background thread "ubi_bgt4d" started, PID 2038
+[   19.371] UBI device number 4, total 25 LEBs (3174400 byte[    8.782143] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" started, PID 2041
+[   19.371] s, 3.0 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+[   19.371] Mounting flash0.cmnonvol0 (mtd 8) to /mnt/cmnonvol
+[   19.471] [    8.876533] UBIFS (ubi4:0): UBIFS: mounted UBI device 4, volume 0, name "cmdata"
+[   19.471] [    8.884060] UBIFS (ubi4:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[   19.472] [    8.894056] UBIFS (ubi4:0): FS size: 1269760 bytes (1 MiB, 10 LEBs), journal size 888833 bytes (0 MiB, 5 LEBs)
+[   19.472] [    8.904117] UBIFS (ubi4:0): reserved for root: 59973 bytes (58 KiB)
+[   19.572] [    8.910445] UBIFS (ubi4:0): media format: w4/r0 (latest is w4/r0), UUID 0BD28A92-165B-43F7-BB7B-861C15755A90, small LPT model
+[   19.773] Attaching MTD 9 to UBI device 5
+[   19.773] [    9.126805] ubi5: attaching mtd9
+[   19.773] [    9.145851] ubi5: scanning is finished
+[   19.773] [    9.158495] ubi5: attached mtd9 (name "flash0.cmnonvol1", size 3 MiB)
+[   19.773] [    9.165002] ubi5: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[   19.773] [    9.171924] ubi5: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[   19.773] [    9.178746] ubi5: VID header offset: 2048 (aligned 2048), data offset: 4096
+[   19.773] [    9.185741] ubi5: good PEBs: 25, bad PEBs: 0, corrupted PEBs: 0
+[   19.773] [    9.191692] ubi5: user volume: 1, internal volumes: 1, max. volumes count: 128
+[   19.773] [    9.198947] ubi5: max/mean erase counter: 8/3, WL threshold: 256, image sequence number: 1937051165
+[   19.773] [    9.208029] ubi5: available PEBs: 0, total reserved PEBs: 25, PEBs reserved for bad PEB handling: 2
+[   19.873] [    9.217132] ubi5: background thread "ubi_bgt5d" started, PID 2144
+[   19.873] UBI device number 5, total 25 LEBs (3174400 byte[    9.227082] UBIFS (ubi5:0): background thread "ubifs_bgt5_0" started, PID 2147
+[   19.874] s, 3.0 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+[   19.874] Mounting flash0.cmnonvol1 (mtd 9) to /mnt/cmnonvol_bak
+[   19.874] [    9.312158] UBIFS (ubi5:0): UBIFS: mounted UBI device 5, volume 0, name "cmdatabak"
+[   19.974] [    9.319915] UBIFS (ubi5:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[   19.974] [    9.329910] UBIFS (ubi5:0): FS size: 1269760 bytes (1 MiB, 10 LEBs), journal size 888833 bytes (0 MiB, 5 LEBs)
+[   19.974] [    9.339983] UBIFS (ubi5:0): reserved for root: 59973 bytes (58 KiB)
+[   19.974] [    9.346321] UBIFS (ubi5:0): media format: w4/r0 (latest is w4/r0), UUID 6699FB22-CB13-4F41-89BA-CABD1C24C371, small LPT model
+[   19.974] Check file /mnt/cmnonvol/cm_dyn.bin
+[   19.974] File /mnt/cmnonvol/cm_dyn.bin matches HCS32
+[   19.974] Check file /mnt/cmnonvol/cm_perm.bin
+[   20.074] File /mnt/cmnonvol/cm_perm.bin matches HCS32
+[   20.074] rProgramStoreHost: ethInterfaceUp error:: No such device
+[   20.074] rnonvolhost: Starting - version 1.1
+[   20.074] rnonvolhost: ethInterfaceUp error:: No such device
+[   20.175] MA [2167]: [main:1236] MBOX Assist daemon running
+[   20.175] MA [2167]: [main:1237] MBOX dev file: /dev/mbox
+[   20.175] MA [2167]: [main:1248] Representing:  RG SVM 
+[   20.175] MA [2167]:[    9.573789] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" stops
+[   20.175]  [cntrlProcess:657] BMU Power state: AC Power
+[   20.175] MA [2167]: [cntrlProcess:658] SVM Power: High Power
+[   20.175] MA [2167]: [cntrlProcess:659] SVM state: Running
+[   20.175] MA [2167]: [cntrlProces[    9.595122] UBIFS (ubi5:0): background thread "ubifs_bgt5_0" stops
+[   20.175] s:660] CM Power: Unknown
+[   20.175] MA [2167]: [cntrlProcess:661] CM state: Unknown
+[   20.175] MA [2167]: [cntrlProcess:662] STB Power: Unknown
+[   20.175] MA [2167]: [cntrlProcess:663] STB state: Unknown
+[   20.175] MA [2167]: [cntrlProcess:664] RG Power: High Power
+[   20.275] MA [2167]: [cntrlProcess:665] RG state: Running
+[   20.275] MA [2167]: [udsProcess:361] Open socket
+[   20.275] MA [2167]: [udsProcess:371] Binding
+[   20.275] MA [2167]: [udsProcess:384] Listening
+[   20.275] Remounted /mnt/cmnonvol as read-only
+[   20.275] Remounted /mnt/cmnonvol_bak as read-only
+[   20.275] BA [2179]: [kernelVersionCheck:1116] Kernel version check successful
+[   20.275] BA [2179]: [prep:1321] Showing merged map
+[   20.275] BA [2179]: [show_map:596] ARM boot ROM:
+[   20.276] BA [2179]: [show_map:598] 	 Memory: 0x10000@0x8430000 (64kB@132MB)
+[   20.276] BA [2179]: [show_map:603] TP1:
+[   20.276] BA [2179]: [show_map:605] 	 Memory: 0x400000@0x8000000 (4MB@128MB)
+[   20.276] BA [2179]: [show_map:609] CM:
+[   20.276] BA [2179]: [show_map:611] 	 Memory: 0x3f00000@0x4000000 (63MB@64MB)
+[   20.276] BA [2179]: [show_atw:562] 	 ATW[0]: 0x4000000 from 0x4000000 to 0x0 (64MB from 64MB to 0MB)
+[   20.276] BA [2179]: [show_atw:577] 		 For clients: 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x09 0x0a 0x0b 0x0c 0x0d 0x0e 0x0f 0x10 0x11 0x12 0x1b 0x1e
+[   20.276] BA [2179]: [show_atw:562] 	 ATW[255]: 0x0 from 0x0 to 0x0 (0MB from 0MB to 0MB)
+[   20.276] BA [2179]: [show_atw:577] 		 For clients:
+[   20.376] BA [2179]: [show_map:615] LEAP:
+[   20.376] BA [2179]: [show_map:617] 	 0x100000@0x7e00000 (1MB@126MB)
+[   20.376] BA [2179]: [show_map:619] CM DSP:
+[   20.376] BA [2179]: [show_atw:562] 	 ATW[1]: 0x400000 from 0x8000000 to 0x7c00000 (4MB from 128MB to 124MB)
+[   20.376] BA [2179]: [show_atw:577] 		 For clients: 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x09 0x0a 0x0b 0x0c 0x0d 0x0e 0x0f 0x12 0x1b 0x1e
+[   20.376] BA [2179]: [show_map:622] CM BOOT:
+[   20.376] BA [2179]: [show_atw:562] 	 ATW[2]: 0x10000 from 0x8400000 to 0x1fc00000 (0MB from 132MB to 508MB)
+[   20.376] BA [2179]: [show_atw:577] 		 For clients: 0x12
+[   20.376] BA [2179]: [show_map:625] CM BOOT EXTRA:
+[   20.377] BA [2179]: [show_atw:562] 	 ATW[255]: 0x0 from 0x0 to 0x0 (0MB from 0MB to 0MB)
+[   20.377] BA [2179]: [show_atw:577] 		 For clients:
+[   20.377] BA [2179]: [show_map:628] CM <-> Host Xfer:
+[   20.377] BA [2179]: [show_map:630] 	 2 buffers - 0x20000@0x8410000 (128KB@132MB)
+[   20.377] BA [2179]: [show_map:632] BTRACE:
+[   20.377] BA [2179]: [show_atw:562] 	 ATW[5]: 0x200000 from 0xcc00000 to 0x8000000 (2MB from 204MB to 128MB)
+[   20.377] BA [2179]: [show_atw:577] 		 For clients: 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x09 0x0a 0x0b 0x0c 0x0d 0x0e 0x0f 0x10 0x11 0x12 0x1b 0x1e
+[   20.377] BA [2179]: [prep:1368] Requesting DTB from kernel
+[   20.477] BA [2179]: [main:1764] Boot Assist daemon running
+[   20.477] BA [2179]: [main:1765] Board: 3390B0 - BCM93390VVCM
+[   20.477] BA [2179]: [main:1766] BA dev file: /dev/ba
+[   20.477] BA [2179]: [main:1767] MBOX dev file: /dev/mbox
+[   20.477] BA [2179]: [cmShow:1053] CM Boot Image: cmboot.bin
+[   20.477] BA [2179]: [cmShow:1054] CM Run Image: cmrun1.bin
+[   20.477] BA [2179]: [cmShow:1055] CM Permanent non-vol: /mnt/cmnonvol/cm_perm.bin
+[   20.477] BA [2179]: [cmShow:1056] CM Dynamic non-vol: /mnt/cmnonvol/cm_dyn.bin
+[   20.477] BA [2179]: [cmShow:1057] CM Data: /tmp/cm_data.bin
+[   20.478] BA [2179]: [main:1773] RG: auto
+[   20.478] BA [2179]: [main:1774] STB: auto
+[   20.478] BA [2179]: [main:1775] CM: auto
+[   20.478] BA [2179]: [main:1776] Boot: parallel
+[   20.478] BA [2179]: [cntrlProcess:757] BMU Power state: AC Power
+[   20.478] BA [2179]: [cntrlProcess:758] OTP: 0x0400000b 0x001c0000
+[   20.478] BA [2179]: [cntrlProcess:759] CM Power: Unknown
+[   20.478] BA [2179]: [cntrlProcess:760] CM state: Unknown
+[   20.478] BA [2179]: [cntrlProcess:761] RG Power: High Power
+[   20.478] BA [2179]: [cntrlProcess:762] RG state: Running
+[   20.478] BA [2179]: [cntrlProcess:763] STB Power: Unknown
+[   20.478] BA [2179]: [cntrlProcess:764] STB state: Unknown
+[   20.478] BA [2179]: [cntrlProcess:765] SVM Power: High Power
+[   20.578] BA [2179]: [cntrlProcess:766] SVM state: Running
+[   20.578] BA [2179]: [show_map:596] ARM boot ROM:
+[   20.578] BA [2179]: [show_map:598] 	 Memory: 0x10000@0x8430000 (64kB@132MB)
+[   20.578] BA [2179]: [show_map:603] TP1:
+[   20.578] BA [2179]: [show_map:605] 	 Memory: 0x400000@0x8000000 (4MB@128MB)
+[   20.578] BA [2179]: [show_map:609] CM:
+[   20.578] BA [2179]: [show_map:611] 	 Memory: 0x3f00000@0x4000000 (63MB@64MB)
+[   20.578] BA [2179]: [show_atw:562] 	 ATW[0]: 0x4000000 from 0x4000000 to 0x0 (64MB from 64MB to 0MB)
+[   20.579] BA [2179]: [show_atw:577] 		 For clients: 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x09 0x0a 0x0b 0x0c 0x0d 0x0e 0x0f 0x10 0x11 0x12 0x1b 0x1e
+[   20.579] BA [2179]: [show_atw:562] 	 ATW[255]: 0x0 from 0x0 to 0x0 (0MB from 0MB to 0MB)
+[   20.579] BA [2179]: [show_atw:577] 		 For clients:
+[   20.579] BA [2179]: [show_map:615] LEAP:
+[   20.579] BA [2179]: [show_map:617] 	 0x100000@0x7e00000 (1MB@126MB)
+[   20.579] BA [2179]: [show_map:619] CM DSP:
+[   20.579] BA [2179]: [show_atw:562] 	 ATW[1]: 0x400000 from 0x8000000 to 0x7c00000 (4MB from 128MB to 124MB)
+[   20.579] BA [2179]: [show_atw:577] 		 For clients: 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x09 0x0a 0x0b 0x0c 0x0d 0x0e 0x0f 0x12 0x1b 0x1e
+[   20.579] BA [2179]: [show_map:622] CM BOOT:
+[   20.679] BA [2179]: [show_atw:562] 	 ATW[2]: 0x10000 from 0x8400000 to 0x1fc00000 (0MB from 132MB to 508MB)
+[   20.679] BA [2179]: [show_atw:577] 		 For clients: 0x12
+[   20.680] BA [2179]: [show_map:625] CM BOOT EXTRA:
+[   20.680] BA [2179]: [show_atw:562] 	 ATW[255]: 0x0 from 0x0 to 0x0 (0MB from 0MB to 0MB)
+[   20.680] BA [2179]: [show_atw:577] 		 For clients:
+[   20.680] BA [2179]: [show_map:628] CM <-> Host Xfer:
+[   20.680] BA [2179]: [show_map:630] 	 2 buffers - 0x20000@0x8410000 (128KB@132MB)
+[   20.680] BA [2179]: [show_map:632] BTRACE:
+[   20.680] BA [2179]: [show_atw:562] 	 ATW[5]: 0x200000 from 0xcc00000 to 0x8000000 (2MB from 204MB to 128MB)
+[   20.680] BA [2179]: [show_atw:577] 		 For clients: 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x09 0x0a 0x0b 0x0c 0x0d 0x0e 0x0f 0x10 0x11 0x12 0x1b 0x1e
+[   20.680] BA [2179]: [cmBootToMem:753] Opening cmboot.bin
+[   20.680] BA [2179]: [cmBootToMem:801] Verifying CM boot header
+[   20.680] BA [2179]: [cmBootToMem:816] Authenticating CM bootloader
+[   20.680] BA [2179]: [rsa:631] Packing mp_modulus
+[   20.680] BA [2179]: [rsa:655] Pack the digest
+[   20.680] BA [2179]: [rsa:662] Do the RSA decrypt
+[   20.680] BA [2179]: [rsa:672] Unpack RSA result
+[   20.680] BA [2179]: [rsa:691] Check Padding
+[   20.680] BA [2179]: [rsa:702] Check TLV
+[   20.680] BA [2179]: [rsa:710] Check Digest
+[   20.680] BA [2179]: [cmBootToMem:822] CM bootloader Authenticated
+[   20.781] BA [2179]: [cmPower:929] Powering on CM
+[   20.781] mtdoops: device=/dev/mtd16 size=3276800
+[   20.781] [   10.213791] mtdoops: Attached to MTD device 16
+[   20.881] Configuring private network
+[   20.981] Disable IPv6
+[   21.081] rProgramStoreHost: ethInterfaceUp error:: No such device
+[   21.083] rnonvolhost: ethInterfaceUp error:: No such device
+[   22.084] rProgramStoreHost: ethInterfaceUp error:: No such device
+[   22.085] rnonvolhost: ethInterfaceUp error:: No such device
+[   22.585] BA [2179]: [cntrlProcess:859] CM state: Waiting For Runtime
+[   22.685] MA [2167]: [cntrlProcess:778] CM state: Waiting For Runtime
+[   22.686] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(1)(0x80000001)
+[   22.686] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(2)(0x80000002)
+[   22.686] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(3)(0x80000003)
+[   22.686] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(4)(0x80000004)
+[   22.686] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(5)(0x80000005)
+[   22.686] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(6)(0x80000006)
+[   22.686] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(7)(0x80000007)
+[   22.786] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(8)(0x80000008)
+[   22.786] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(9)(0x80000009)
+[   22.786] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(10)(0x8000000a)
+[   22.786] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(11)(0x8000000b)
+[   22.786] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(12)(0x8000000c)
+[   22.786] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(13)(0x8000000d)
+[   22.786] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(14)(0x8000000e)
+[   22.786] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(15)(0x8000000f)
+[   22.887] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(16)(0x80000010)
+[   22.887] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(17)(0x80000011)
+[   22.887] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(18)(0x80000012)
+[   22.887] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(19)(0x80000013)
+[   22.887] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(20)(0x80000014)
+[   22.887] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(21)(0x80000015)
+[   22.887] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(22)(0x80000016)
+[   22.887] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(23)(0x80000017)
+[   22.887] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(24)(0x80000018)
+[   22.887] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(25)(0x80000019)
+[   22.987] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(26)(0x8000001a)
+[   22.988] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(27)(0x8000001b)
+[   22.988] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(28)(0x8000001c)
+[   22.988] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(29)(0x8000001d)
+[   22.988] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(30)(0x8000001e)
+[   22.988] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(31)(0x8000001f)
+[   22.988] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(32)(0x80000020)
+[   22.988] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(33)(0x80000021)
+[   22.988] [   12.429701] ethsw_flow_control: Enabling ACB
+[   23.088] [   12.434343] ethsw_3390: Device ID 3390
+[   23.088] [   12.438135] ethsw_int: Ethsw interrupt initialized
+[   23.088] [   12.443000] ethsw_proc: /proc/driver/ethsw dir and files created
+[   23.088] [   12.449025] ethsw_proc: Ethsw proc initialized
+[   23.088] [   12.453484] ethsw_init_plat: Ethsw driver probed
+[   23.088] [   12.458274] ethsw_init_plat: Ethsw module initialized
+[   23.088] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(34)(0x80000022)
+[   23.088] BA [2179]: [cmImageProcess:485] CM Re[   12.475797] libphy: unimac MII bus: probed
+[   23.088] quest: (cmrun1.b[   12.480239] unimac-mdio d040062c.mdio: Broadcom UniMAC MDIO bus
+[   23.088] in)(35)(0x80000023)
+[   23.088] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(36)(0x80000024)
+[   23.089] BA [2[   12.513521] libphy: unimac MII bus: probed
+[   23.089] 179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(37)(0x80000025)
+[   23.189] [   12.529926] Broadcom BCM3390 d4e403c0.mdio:08: failed to request GPHY clock
+[   23.189] rProgramStoreHost: ethInterfaceUp error:: No such device
+[   23.189] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(38)(0x80000026)
+[   23.189] BA [2179]: [cmImagePr[   12.552694] Broadcom BCM3390 d4e403c0.mdio:09: failed to request GPHY clock
+[   23.189] ocess:485] CM Request: (cmrun1.bin)(39)(0x800000[   12.565061] Broadcom BCM3390 d4e403c0.mdio:0a: failed to request GPHY clock
+[   23.189] 27)
+[   23.189] rnonvolhost: ethInterfaceUp error:: No such devi[   12.576720] Broadcom BCM3390 d4e403c0.mdio:0b: failed to request GPHY clock
+[   23.189] ce
+[   23.189] [   12.596509] Broadcom BCM5499X d4e403c0.mdio:13: probed
+[   23.189] [   12.601743] unimac-mdio d4e403c0.mdio: Broadcom UniMAC MDIO bus
+[   23.189] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(40)(0x80000028)
+[   23.189] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(41)(0x80000029)
+[   23.289] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(42)(0x8000002a)
+[   23.290] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(43)(0x8000002b)
+[   23.290] [   12.658392] sgmiiplus2 d0400d00.sgmii: Configured Link Speed @ 2.5 Gbps
+[   23.290] [   12.665087] sgmiiplus2 d0400d00.sgmii: SGMIIPLUS2 Core initialized
+[   23.290] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(44)(0x8000002c)
+[   23.290] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(45)(0x8000002d)
+[   23.290] Load Runner Driver
+[   23.290] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(46)(0x8000002e)
+[   23.290] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(47)(0x8000002f)
+[   23.390] [   12.742312] bdmf: loading out-of-tree module taints kernel.
+[   23.390] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(48)(0x80000030)
+[   23.390] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(49)(0x80000031)
+[   23.390] BA [2179]: [cmImageProcess:485] [   12.795583] rdpa_cm_parse_dt_node: DHD runner offload base=0x10c00000 size=0x0
+[   23.390] CM Request: (cmr[   12.804185] rdpa_cm_parse_dt_node: Unable to retrieve Runner DoR ports to segments info.
+[   23.390] un1.bin)(50)(0x8[   12.813674] brcm-rdpa-cm: probe of d5000000.runner failed with error -2
+[   23.390] 0000032)
+[   23.391] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(51)(0x80000033)
+[   23.491] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(52)(0x80000034)
+[   23.491] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(53)(0x80000035)
+[   23.491] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(54)(0x80000036)
+[   23.491] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(55)(0x80000037)
+[   23.591] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(56)(0x80000038)
+[   23.591] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(57)(0x80000039)
+[   23.591] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(58)(0x8000003a)
+[   23.591] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(59)(0x8000003b)
+[   23.591] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(60)(0x8000003c)
+[   23.691] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(61)(0x8000003d)
+[   23.691] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(62)(0x8000003e)
+[   23.692] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(63)(0x8000003f)
+[   23.692] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(64)(0x80000040)
+[   23.692] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(65)(0x80000041)
+[   23.792] [   13.146292] rdpa: module license 'Proprietary' taints kernel.
+[   23.792] [   13.152075] Disabling lock debugging due to kernel taint
+[   23.792] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(66)(0x80000042)
+[   23.792] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(67)(0x80000043)
+[   23.792] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(68)(0x80000044)
+[   23.792] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(69)(0x80000045)
+[   23.792] BA [2179]: [cmImageProcess:485] CM Request: (cmrun1.bin)(70)(0x80000046)
+[   23.892] [   13.247831] RDP Physical address=0xd5000000 Virtual address = 0xa3300000
+[   23.892] MA [2167]: [cntrlProcess:778] CM state: Verifying Runtime Image
+[   23.892] [   13.330920] passing rdd_init_params.runner_iptv_tables_base_ptr=0x8b00000
+[   23.993] [   13.337789] configure_runner: NATC keysize 0x100070 key element size 16 contextsize 0x400000 context element size 64
+[   23.993] BA [2179]: [cntrlProcess:859] CM state: Verifying Runtime Image
+[   23.993] [   13.363692] rdd_init_params.runner_nat_cache_key_ptr=0xa3400000
+[   23.993] [   13.369654] g_runner_ddr0_iptv_lookup_ptr=0xa3a40000
+[   23.993] [   13.374647] g_runner_ddr0_iptv_context_ptr=0xa3a00000
+[   23.993] [   13.379726] g_runner_ddr0_iptv_ssm_context_ptr=0xa3a80000
+[   24.193] rProgramStoreHost: ethInterfaceUp error:: No such device
+[   24.193] rnonvolhost: ethInterfaceUp error:: No such device
+[   24.293] [   13.642453] FPM_BPM phy_addr 0xd3a30000,virt_addr 0xa2fdc000
+[   24.394] [   13.828645] Runner version: rdp_gen_21.2.0.3
+[   24.394] [   13.832948] init_system: Configure Runner in DOCSIS mode
+[   24.494] [   13.925689] brcm-dqnet: Setting /proc/sys/net/core/dev_weight=256
+[   24.494] [   13.931944] brcm-dqnet: Setting /proc/sys/net/core/netdev_budget=1000
+[   24.595] [   13.938461] brcm-dqnet: Setting /proc/sys/net/core/netdev_max_backlog=3000
+[   24.595] [   13.946501] brcm-dqnet: Setting /sys/class/net/priv0/queues/rx-0/rps_cpus=3
+[   24.595] [   13.959182] brcm-dqnet: net device priv0
+[   24.595] [   13.965229] LAN Exception Queue = 33
+[   24.596] [   13.968858] brcm-dqnet: Setting /sys/class/net/iperf/queues/rx-0/rps_cpus=3
+[   24.596] [   13.994690] brcm-dqnet: net device iperf
+[   24.596] [   13.999424] LAN Exception Queue = 48
+[   24.596] [   14.003050] WAN Exception Queue = 50
+[   24.596] [   14.011814] brcm-dqnet: Setting /sys/class/net/cm0/queues/rx-0/rps_cpus=3
+[   24.596] [   14.026495] brcm-dqnet: Setting /sys/class/net/cm0/queues/rx-1/rps_cpus=3
+[   24.596] [   14.033451] brcm-dqnet: Setting /sys/class/net/cm0/queues/rx-2/rps_cpus=3
+[   24.697] [   14.040331] brcm-dqnet: Setting /sys/class/net/cm0/queues/rx-3/rps_cpus=1
+[   24.697] [   14.052681] brcm-dqnet: net device cm0
+[   24.697] [   14.057305] Broadcom BCM5499X d4e403c0.mdio:13: BCM50991ELM B0: initializing
+[   25.198] rProgramStore Host (1): Waiting for eth interface 'privbr:0' to come up.
+[   25.198]              5 seconds elapsed
+[   25.199] rProgramStoreHost: ethInterfaceUp error:: No such device
+[   25.199] rnonvolhost: Waiting for eth interface to come up. 5 seconds elapsed
+[   25.199] rnonvolhost: ethInterfaceUp error:: No such device
+[   26.201] rProgramStoreHost: ethInterfaceUp error:: No such device
+[   26.201] rnonvolhost: ethInterfaceUp error:: No such device
+[   27.203] rProgramStoreHost: ethInterfaceUp error:: No such device
+[   27.203] rnonvolhost: ethInterfaceUp error:: No such device
+[   27.805] [   17.244757] Broadcom BCM5499X d4e403c0.mdio:13: PHY Firmware Size 294708:0x47f34 bytes
+[   27.906] [   17.252709] Broadcom BCM5499X d4e403c0.mdio:13: PHY Firmware Simple Checksum: 0xa0b57c0b
+[   28.206] rProgramStoreHost: ethInterfaceUp error:: No such device
+[   28.206] rnonvolhost: ethInterfaceUp error:: No such device
+[   28.407] [   17.829098] Broadcom BCM5499X d4e403c0.mdio:13: PHY Firmware is loaded with Good CRC.
+[   28.407] [   17.837204] Broadcom BCM5499X d4e403c0.mdio:13: PHY Firmware Version(Main.Branch.Build): 2.02.08
+[   28.408] [   17.846201] Broadcom BCM5499X d4e403c0.mdio:13: PHY Firmware Date(MM/DD/YYYY): 10/15/2020
+[   28.909] [   18.300121] Broadcom BCM5499X d4e403c0.mdio:13: BCM50991ELM B0: initialized
+[   29.109] [   18.509320] brcm-dqnet: Setting /sys/class/net/eth7/queues/rx-0/rps_cpus=3
+[   29.109] [   18.516591] brcm-dqnet: Setting /sys/class/net/eth7/queues/rx-1/rps_cpus=3
+[   29.110] [   18.523560] brcm-dqnet: Setting /sys/class/net/eth7/queues/rx-2/rps_cpus=3
+[   29.110] [   18.530474] brcm-dqnet: Setting /sys/class/net/eth7/queues/rx-3/rps_cpus=1
+[   29.210] [   18.557133] brcm-dqnet: net device eth7
+[   29.210] [   18.600117] iperf driver version 2.01 initialized
+[   29.210] rProgramStoreHost: ethInterfaceUp error:: No such device
+[   29.311] rnonvolhost: ethInterfaceUp error:: No such device
+[   29.311] [   18.740831] privbr: port 1(priv0) entered blocking state
+[   29.311] [   18.746182] privbr: port 1(priv0) entered disabled state
+[   29.311] [   18.751703] device priv0 entered promiscuous mode
+[   29.412] [   18.759034] netif_napi_add() called with weight 256 on device 
+[   29.412] [   18.772342] IPv6: ADDRCONF(NETDEV_UP): privbr: link is not ready
+[   30.113] Cannot run mboxassist, another instance is running?
+[   30.113] ******************************
+[   30.113] Starting user apps services...
+[   30.113] ******************************
+[   30.214] rProgramStore Host (1): Waiting for eth interface 'privbr:0' to come up.
+[   30.214]              10 seconds elapsed
+[   30.314] rnonvolhost: Waiting for eth interface to come up. 10 seconds elapsed
+[   30.614] MA [2167]: [cntrlProcess:778] CM state: Waiting for DATA
+[   30.614] BA [2179]: [cntrlProcess:859] CM state: Waiting for DATA
+[   30.615] BA [2179]: [cmImageProcess:485] CM Request: (/mnt/cmnonvol/cm_perm.bin)(1)(0x00000001)
+[   31.616] BA [2179]: [cmImageProcess:485] CM Request: (/mnt/cmnonvol/cm_dyn.bin)(1)(0x80000001)
+[   33.719] [   23.063743] DQM Init complete for dqm tunnel rg-cm
+[   33.719] [   23.068944] DQM Init complete for dqm tunnel svm-cm
+[   33.719] [   23.077429] brcm-dqm: DQM device dfap with 64 Q's
+[   35.121] Continuing with user apps startup
+[   35.221] ==============================
+[   35.222] CHIP:3390
+[   35.222] MANUFACT_BITS: 5CC7
+[   35.222] BOARD ID: 000000D0
+[   35.222] SUBSYSTEM: rg
+[   35.222] VFLASH: n
+[   35.222] EXTENSION: 
+[   35.222] KERNEL: vmlinuz-3390b0
+[   35.222] STARTUP: BA=y RC=y AUTO=y
+[   35.222] LATTICE: y
+[   35.222] ==============================
+[   35.223] rProgramStore Host (1): Waiting for eth interface 'privbr:0' to come up.
+[   35.223]              15 seconds elapsed
+[   35.223] rnonvolhost: Waiting for eth interface to come up. 15 seconds elapsed
+[   35.323] [   24.668140] Ebtables v2.0 registered
+[   35.323] RG: Starting lattice in bridged mode
+[   35.324] [   24.750320] Netfilter messages via NETLINK v0.30.
+[   35.424] [   24.798246] nf_conntrack version 0.5.0 (6144 buckets, 24576 max)
+[   35.424] [   24.818255] ctnetlink v0.93: registering with nfnetlink.
+[   35.525] [   24.907635] ip_tables: (C) 2000-2006 Netfilter Core Team
+[   35.825] [   25.253435] wanbridge: port 1(cm0) entered blocking state
+[   35.825] [   25.258885] wanbridge: port 1(cm0) entered disabled state
+[   35.826] [   25.264507] device cm0 entered promiscuous mode
+[   35.926] brctl: iface eth0: No such device
+[   35.926] brctl: iface eth1: No such device
+[   35.926] brctl: iface eth2: No such device
+[   35.926] brctl: iface eth3: No such device
+[   35.926] brctl: iface eth4: No such device
+[   35.926] [   25.327729] wanbridge: port 2(eth7) entered blocking state
+[   35.926] [   25.333275] wanbridge: port 2(eth7) entered disabled state
+[   35.927] [   25.338979] device eth7 entered promiscuous mode
+[   36.027] [   25.407496] privbr: port 2(vethpriv) entered blocking state
+[   36.027] [   25.413116] privbr: port 2(vethpriv) entered disabled state
+[   36.027] [   25.418945] device vethpriv entered promiscuous mode
+[   36.027] [   25.456306] privbr: port 2(vethpriv) entered blocking state
+[   36.028] [   25.461914] privbr: port 2(vethpriv) entered forwarding state
+[   36.028] [   25.467770] privbr: port 2(vethpriv) entered disabled state
+[   36.228] /usr/local/bin/latticelagctl
+[   36.228] Wait latticerpcd runs...
+[   36.328]                           *
+[   36.329]                          * *
+[   36.329]                          * *
+[   36.329]                         *   *
+[   36.329]                         *   *
+[   36.329]                        *     *
+[   36.329]                        *     *
+[   36.329]                        *     *
+[   36.329]                       *       *
+[   36.329]                       *       *
+[   36.329]                       *       *
+[   36.329]                      *         *
+[   36.329]                      *         *
+[   36.330]                      *         *
+[   36.330]                      *         *
+[   36.330]                     *           *
+[   36.330]           *         *           *         *
+[   36.430]         *   *       *           *       *   *          ***
+[   36.431] *     *      *     *             *     *      *     *       *******************
+[   36.431]    *          *   *               *   *          *
+[   36.431]                 *                   *
+[   36.431] Broadcom Corporation Reference Design
+[   36.431]  +------------------------------------------------------------------------------------------------+
+[   36.431]  |                                                                                                |
+[   36.432]  | LATTICE                                                                                        |
+[   36.432]  |                                                                                                |
+[   36.432]  | Copyright (c) 1999 - 2022 Broadcom Corporation                                                 |
+[   36.432]  |                                                                                                |
+[   36.432]                                                                                                   |
+[   36.432]  | Revision       : Prod_21.2
+[   36.433]  |                                                                                                |
+[   36.533]  +------------------------------------------------------------------------------------------------+
+[   36.533]                                                                                                   |
+[   36.533]  | Build Date     : Aug 25 2022
+[   36.533]                                                                                                   |
+[   36.533]  | Build Time     : 11:25:01 (+0800)
+[   36.533]                                                                                                   |
+[   36.534]  | Build Path     : /home/ubee/codes/21.2_charter_1325/rbb_lattice/rg_apps/lattice
+[   36.534]                                                                                                   |
+[   36.534]  | Image Path     : /home/ubee/codes/21.2_charter_1325/rbb_lattice/images
+[   36.534]                                                                                                   |
+[   36.534]  | Build By       : ubee
+[   36.534]                                                                                                   |
+[   36.534]  | Build Options  : Build_System Build_Cm Build_Mta Build_Ethernet Build_PacketAcceleration
+[   36.534]                                                                                                   |
+[   36.534]  | Build Options  : Build_SpeedTest Build_Thermal Build_LAG Build_Gpio Build_MacSec BUILD_BRIDGE
+[   36.635]  +------------------------------------------------------------------------------------------------+
+[   36.635]  | Linux Kernel                                                                                   |
+[   36.635]  |                                                                                                |
+[   36.635]                                                                                                   |
+[   36.636]  | Revision       : 4.9.248-Prod_21.2#9 SMP Thu Aug 25 11:21:18 CST 2022
+[   36.636]                                                                                                   |
+[   36.636]  | Device Tree    : rg.3390v0-vvcm.dtb
+[   36.636]  |                                                                                                |
+[   36.636]  +------------------------------------------------------------------------------------------------+
+[   36.636]  | RUNNER                                                                                         |
+[   36.636]  |                                                                                                |
+[   36.637]  | Copyright (c) 1999 - 2022 Broadcom Corporation                                                 |
+[   36.737]  |                                                                                                |
+[   36.737]                                                                                                   |
+[   36.737]  | Revision       : rdp_gen_21.2.0.3
+[   36.737]  +------------------------------------------------------------------------------------------------+
+[   36.738]  | BOLT                                                                                           |
+[   36.738]  |                                                                                                |
+[   36.738]  | Copyright (c) 1999 - 2022 Broadcom Corporation                                                 |
+[   36.738]  |                                                                                                |
+[   36.738]                                                                                                   |
+[   36.738]  | Revision       : 5.03
+[   36.738]                                                                                                   |
+[   36.739]  | Build Timestamp: 2021-08-05 10:46:31
+[   36.739]                                                                                                   |
+[   36.739]  | Build Tag      : v5.03_B1
+[   36.739]                                                                                                   |
+[   36.839]  | Build By       : ubee@ubee-B560M-AORUS-ELITE
+[   36.839]                                                                                                   |
+[   36.839]  | Revision(FSBL) : 5.03
+[   36.840]  +------------------------------------------------------------------------------------------------+
+[   37.241] [   26.643250] 8021q: adding VLAN 0 to HW filter on device eth7
+[   37.341] [   26.747102] FLOWMGR Init: v1.0
+[   37.441] [   26.787684] FLOWMGR Register fap: 3
+[   37.442] [   26.793674] FLOWMGR [pid-3323] [cpu-1]: proc cmd - fap_config wanbridge wanbridge
+[   37.442] [   26.801271] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_acct=1->1
+[   37.442] [   26.807603] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal=1->1
+[   37.442] [   26.814829] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_udp_timeout=30->60
+[   37.442] [   26.821928] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_udp_timeout_stream=180->300
+[   37.443] [   26.829794] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_established=432000->300
+[   37.443] [   26.838362] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_syn_recv=60->60
+[   37.443] [   26.846223] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_syn_sent=120->60
+[   37.443] [   26.854171] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_fin_wait=120->10
+[   37.443] [   26.862119] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_close_wait=60->10
+[   37.443] [   26.870154] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_last_ack=30->1
+[   37.444] [   26.877930] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_time_wait=120->1
+[   37.544] [   26.885882] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_close=10->1
+[   37.544] [   26.893620] FLOWMGR [pid-3323] [cpu-0]: proc cmd - fap_enable 1
+[   37.544] [   26.899591] FAP Pkt Replacement 1
+[   37.544] [   26.904082] FLOWMGR [pid-3323] [cpu-0]: proc cmd - inf add cm0
+[   37.545] [   26.909961] FLOWMGR: Changing wandev from (null) to cm0
+[   37.545] [   26.915318] FLOWMGR [pid-3323] [cpu-0]: proc cmd - inf add eth7
+[   37.645] POWERMAN: Settin[   26.995110] power_service [pid-3430] [cpu-0]: proc cmd - gphy_pulse set_uptime 10g debug verbosity level to: 1
+[   37.645] POWERMAN: adding [   27.004509] power_service [pid-3430] [cpu-0]: proc cmd - gphy_pulse set_downtime 25
+[   37.645] Ethernet interfaces: eth7:
+[   37.646] POWE[   27.016315] power_service [pid-3430] [cpu-0]: proc cmd - gphy_pulse set_pulse_state 0RMAN: Setting po[   27.020901] rpc_register_functions registered rpc_erouter service with 256 functions
+[   37.646] wermanager startup delay to: 300
+[   37.646] POWERMAN: Setting system chip type to: 3390
+[   37.646] POWERMAN: Setting GPHY power up time to: 10
+[   37.646] POWERMAN: Setting GPHY power down time to: 25
+[   37.646] registered userspace service 4 functions
+[   37.647]  etSpringd: The Eternal spring optimization Manager (etspringd) has started in User (interactive) mode! 
+[   39.350] ****************************************
+[   39.350] LAG Settings
+[   39.351] Enable: 0
+[   39.351] Mode: 802.3ad
+[   39.351] XmitHashPolicy: layer3+4
+[   39.351] LacpRate: fast
+[   39.351] SelectionLogic: bandwidth
+[   39.351] InterfaceList: eth0;eth1
+[   39.351] ****************************************
+[   39.351] Creating /data/router-dyn.config
+[   40.253] rProgramStore Host (1): Waiting for eth interface 'privbr:0' to come up.
+[   40.253]              20 seconds elapsed
+[   40.254] rnonvolhost: Waiting for eth interface to come up. 20 seconds elapsed
+[   40.454] [   29.843160] Runner Transparent Forwarding (RTF) Module Init: v0.2 Aug 25 2022 10:54:23
+[   40.454] [   29.852931] rtf [pid-3003] [cpu-0]: proc cmd - host_inf wanbridge
+[   40.454] [   29.859150] DQNET [pid-3003] [cpu-0]: proc cmd - brcmtag_opcode uc 1
+[   40.454] [   29.865606] rtf [pid-3003] [cpu-0]: proc cmd - enable 1
+[   40.555] RG: Starting snmpd
+[   40.655] RG: Starting lattice with RG CM Originated support
+[   40.655] Start monitoring cm0
+[   40.655] Starting security monitor scripts
+[   40.755] starting pid 3572, tty '': '/bin/cttyhack /bin/loginscript.sh'
+[   40.755] DIAGMAN: Started with PID 3568
+[   40.755] Listening on UDP socket addr<ac1fff28> port<63391> sock_desc<4> for IPC commands.
+[   40.755] Setting up daemon listen socket<4> on port<63391>
+[   40.755] Listening on UDP socket addr<7f000001> port<63391> sock_desc<5> for IPC commands.
+[   40.755] Setting up daemon listen socket<5> on port<63391>
+[   40.755] Start monitoring Remote Connections
+[   40.755] Sending Crash Info to bfcResetReasonEventLog
+[   40.756] Start monitoring thermal level, set threshold to 70 ...
+[   40.756] Debug option entered 
+[   40.756]  rmonitord: The remote monitor(rmonitord) Manager has started in User mode 
+[   40.756] Start monitoring Denial of Service 
+[   40.756] Start monitoring UartRxCnt, beginning RxCnt set to 0 ...
+[   40.756] Start monitoring connection track sessions, set threshold to 19660 ...
+[   40.756] Start monitoring available memory, threshold set to 36449 ...
+[   40.856] Start monitoring Abnormal JTAG usage
+[   45.262] [3390:RG]# rProgramStore Host (1): Waiting for eth interface 'privbr:0' to come up.
+[   45.263]              25 seconds elapsed
+[   45.263] rnonvolhost: Waiting for eth interface to come up. 25 seconds elapsed
+[   46.866] Timeout: No Response from 172.31.255.45
+[   46.867]  terminated unsuccessfully
+[   47.368] [   36.744369] privbr: port 1(priv0) entered blocking state
+[   47.368] [   36.749957] privbr: port 1(priv0) entered forwarding state
+[   47.368] [   36.757411] IPv6: ADDRCONF(NETDEV_CHANGE): privbr: link becomes ready
+[   62.502] [   51.890630] rtf [pid-3698] [cpu-0]: proc cmd - enable 1
+[   62.503] [   51.899246] DQNET [pid-3699] [cpu-0]: proc cmd - brcmtag_opcode uc 1
+[   62.503] rnonvolhost: remount ro partitio[   51.909994] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" started, PID 3700
+[   62.503] n to write dynamic nonvol
+[   62.503] [   51.924433] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" stops
+[   62.503] [   51.934883] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" started, PID 3701
+[   62.603] [   51.947461] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" stops
+[   62.603] [   51.960922] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" started, PID 3702
+[   62.603] [   51.973208] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" stops
+[   62.603] rnonvolhost: upd[   51.989384] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" started, PID 3703
+[   62.603] ated /mnt/cmnonvol/cm_dyn.bin
+[   62.603] [   51.999436] UBIFS (ubi5:0): background thread "ubifs_bgt5_0" started, PID 3704
+[   62.603] rnonvolhost: backed up to /mnt/cmnonvol_bak/cm_dyn.bin
+[   62.603] [   52.013355] UBIFS (ubi5:0): background thread "ubifs_bgt5_0" stops
+[   62.704] [   52.051303] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" stops
+[   63.004] Timeout: No Response from 172.31.255.45
+[   63.004]  terminated unsuccessfully
+[   65.107] WAN interface state: RPC_EVENT_WANIF_OPER_STATE_BOOTED
+[   65.107] mdio_write: eth7 phy_id 13 reg 401e4038 <- 0
+[   65.107] mdio_write: eth7 phy_id 13 reg 401e4005 <- 8022
+[   65.107] mdio_write: eth7 phy_id 13 reg 40070000 <- 3200
+[   65.107] mdio_write: eth7 phy_id 13 reg 4021a83b <- a450
+[   65.107] mdio_write: eth7 phy_id 13 reg 4021a832 <- 6
+[   65.107] mdio_write: eth7 phy_id 13 reg 4021a8ec <- 2ff
+[   65.708] WAN interface state: RPC_EVENT_WANIF_OPER_STATE_NO_ENERGY_DETECTED
+[   65.708] WAN interface state: RPC_EVENT_WANIF_OPER_STATE_HTTP_IPSTACK_UPDATED
+[   65.708] iptables: No chain/target/match by that name.
+[   65.808] Set IPTABLES rules for RG WAN and RG LAN HTTP access
+[   65.808] MA [2167]: [cntrlProcess:778] CM state: Running
+[   65.808] BA [2179]: [cntrlProcess:859] CM state: Running
+[   65.909] WAN interface state: RPC_EVENT_WANIF_OPER_STATE_HTTP_IPSTACK_UPDATED
+[   66.109] Set IPTABLES rules for RG WAN and RG LAN HTTP access
+[   73.023] .1.3.6.1.4.1.4684.38.2.2.2.1.2.12161.1.1.21.0 = OID: .1.3.6.1.4.1.4684.38.2.2.2.1.9.1.3.1.1.2
+[   73.023]  executed successfully
+[   73.123] .1.3.6.1.4.1.4684.38.2.2.2.1.2.12161.1.1.22.0 = STRING: "RG reset cause:software_master, Crash detected:Yes, Crash type:Emergency restart, Crash date:1970-1-1 00:08:03, Crash cpu:1, BT-bsbt+0x0/0x278"

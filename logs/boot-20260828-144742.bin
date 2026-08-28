@@ -1,0 +1,227 @@
+ÿBA [2178]: [cntrlProcess:859] CM state: Waiting for DATA
+MA [2167]: [cntrlProcess:778] CM state: Waiting for DATA
+BA [2178]: [cmImageProcess:485] CM Request: (/mnt/cmnonvol/cm_perm.bin)(1)(0x00000001)
+BA [2178]: [cmImageProcess:485] CM Request: (/mnt/cmnonvol/cm_dyn.bin)(1)(0x80000001)
+[   23.155548] DQM Init complete for dqm tunnel rg-cm
+[   23.160843] DQM Init complete for dqm tunnel svm-cm
+[   23.169458] brcm-dqm: DQM device dfap with 64 Q's
+
+Continuing with user apps startup
+
+rProgramStore Host (1): Waiting for eth interface 'privbr:0' to come up.
+             15 seconds elapsed
+==============================
+CHIP:3390
+MANUFACT_BITS: 5CC7
+BOARD ID: 000000D0
+SUBSYSTEM: rg
+VFLASH: n
+EXTENSION: 
+KERNEL: vmlinuz-3390b0
+STARTUP: BA=y RC=y AUTO=y
+LATTICE: y
+==============================
+rnonvolhost: Waiting for eth interface to come up. 15 seconds elapsed
+[   24.792235] Ebtables v2.0 registered
+RG: Starting lattice in bridged mode
+[   24.867805] Netfilter messages via NETLINK v0.30.
+[   24.908263] nf_conntrack version 0.5.0 (6144 buckets, 24576 max)
+[   24.928541] ctnetlink v0.93: registering with nfnetlink.
+[   25.026836] ip_tables: (C) 2000-2006 Netfilter Core Team
+[   25.364879] wanbridge: port 1(cm0) entered blocking state
+[   25.370336] wanbridge: port 1(cm0) entered disabled state
+[   25.375977] device cm0 entered promiscuous mode
+brctl: iface eth0: No such device
+brctl: iface eth1: No such device
+brctl: iface eth2: No such device
+brctl: iface eth3: No such device
+brctl: iface eth4: No such device
+[   25.445125] wanbridge: port 2(eth7) entered blocking state
+[   25.450721] wanbridge: port 2(eth7) entered disabled state
+[   25.456414] device eth7 entered promiscuous mode
+[   25.523772] privbr: port 2(vethpriv) entered blocking state
+[   25.529435] privbr: port 2(vethpriv) entered disabled state
+[   25.535300] device vethpriv entered promiscuous mode
+[   25.576364] privbr: port 2(vethpriv) entered blocking state
+[   25.581967] privbr: port 2(vethpriv) entered forwarding state
+[   25.587813] privbr: port 2(vethpriv) entered disabled state
+/usr/local/bin/latticelagctl
+Wait latticerpcd runs...
+
+
+                          *
+                         * *
+                         * *
+                        *   *
+                        *   *
+                       *     *
+                       *     *
+                       *     *
+                      *       *
+                      *       *
+                      *       *
+                     *         *
+                     *         *
+                     *         *
+                     *         *
+                    *           *
+          *         *           *         *
+        *   *       *           *       *   *          ***
+*     *      *     *             *     *      *     *       *******************
+   *          *   *               *   *          *
+                *                   *
+
+Broadcom Corporation Reference Design
+ +------------------------------------------------------------------------------------------------+
+ |                                                                                                |
+ | LATTICE                                                                                        |
+ |                                                                                                |
+ | Copyright (c) 1999 - 2022 Broadcom Corporation                                                 |
+ |                                                                                                |
+                                                                                                  | | Revision       : Prod_21.2
+ |                                                                                                |
+ +------------------------------------------------------------------------------------------------+
+                                                                                                  | | Build Date     : Aug 25 2022
+                                                                                                  | | Build Time     : 11:25:01 (+0800)
+                                                                                                  | | Build Path     : /home/ubee/codes/21.2_charter_1325/rbb_lattice/rg_apps/lattice
+                                                                                                  | | Image Path     : /home/ubee/codes/21.2_charter_1325/rbb_lattice/images
+                                                                                                  | | Build By       : ubee
+                                                                                                  | | Build Options  : Build_System Build_Cm Build_Mta Build_Ethernet Build_PacketAcceleration
+                                                                                                  | | Build Options  : Build_SpeedTest Build_Thermal Build_LAG Build_Gpio Build_MacSec BUILD_BRIDGE
+ +------------------------------------------------------------------------------------------------+
+ | Linux Kernel                                                                                   |
+ |                                                                                                |
+                                                                                                  | | Revision       : 4.9.248-Prod_21.2#9 SMP Thu Aug 25 11:21:18 CST 2022
+                                                                                                  | | Device Tree    : rg.3390v0-vvcm.dtb
+ |                                                                                                |
+ +------------------------------------------------------------------------------------------------+
+ | RUNNER                                                                                         |
+ |                                                                                                |
+ | Copyright (c) 1999 - 2022 Broadcom Corporation                                                 |
+ |                                                                                                |
+                                                                                                  | | Revision       : rdp_gen_21.2.0.3
+ +------------------------------------------------------------------------------------------------+
+ | BOLT                                                                                           |
+ |                                                                                                |
+ | Copyright (c) 1999 - 2022 Broadcom Corporation                                                 |
+ |                                                                                                |
+                                                                                                  | | Revision       : 5.03
+                                                                                                  | | Build Timestamp: 2021-08-05 10:46:31
+                                                                                                  | | Build Tag      : v5.03_B1
+                                                                                                  | | Build By       : ubee@ubee-B560M-AORUS-ELITE
+                                                                                                  | | Revision(FSBL) : 5.03
+ +------------------------------------------------------------------------------------------------+
+[   26.657102] 8021q: adding VLAN 0 to HW filter on device eth7
+[   26.765180] FLOWMGR Init: v1.0
+[   26.799369] FLOWMGR Register fap: 3
+[   26.822951] FLOWMGR [pid-3330] [cpu-0]: proc cmd - fap_config wanbridge wanbridge
+[   26.830528] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_acct=1->1
+[   26.836847] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal=1->1
+[   26.844075] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_udp_timeout=30->60
+[   26.851192] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_udp_timeout_stream=180->300
+[   26.859083] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_established=432000->300
+[   26.867646] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_syn_recv=60->60
+[   26.875508] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_syn_sent=120->60
+[   26.883466] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_fin_wait=120->10
+[   26.891416] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_close_wait=60->10
+[   26.899451] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_last_ack=30->1
+[   26.907226] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_time_wait=120->1
+[   26.915176] FLOWMGR: /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_close=10->1
+[   26.922929] FLOWMGR [pid-3330] [cpu-1]: proc cmd - fap_enable 1
+[   26.928906] FAP Pkt Replacement 1
+[   26.933636] FLOWMGR [pid-3330] [cpu-1]: proc cmd - inf add cm0
+[   26.939520] FLOWMGR: Changing wandev from (null) to cm0
+[   26.944894] FLOWMGR [pid-3330] [cpu-1]: proc cmd - inf add eth7
+POWERMAN: Settin[   27.024643] power_service [pid-3433] [cpu-1]: proc cmd - gphy_pulse set_uptime 10g debug verbosity level to: 1
+POWERMAN: adding [   27.033592] power_service [pid-3433] [cpu-1]: proc cmd - gphy_pulse set_downtime 25
+Ethernet interfaces: eth7:
+POWERMAN: Setting po[   27.047481] power_service [pid-3433] [cpu-1]: proc cmd - gphy_pulse set_pulse_state 0wermanager startup delay to: 300
+POWERMAN: Sett[   27.057288] rpc_register_functions registered rpc_erouter service with 256 functions
+ing system chip type to: 3390
+POWERMAN: Setting GPHY power up time to: 10
+POWERMAN: Setting GPHY power down time to: 25
+registered userspace service 4 functions
+
+ etSpringd: The Eternal spring optimization Manager (etspringd) has started in User (interactive) mode! 
+****************************************
+LAG Settings
+Enable: 0
+Mode: 802.3ad
+XmitHashPolicy: layer3+4
+LacpRate: fast
+SelectionLogic: bandwidth
+InterfaceList: eth0;eth1
+****************************************
+Creating /data/router-dyn.config
+rProgramStore Host (1): Waiting for eth interface 'privbr:0' to come up.
+             20 seconds elapsed
+rnonvolhost: Waiting for eth interface to come up. 20 seconds elapsed
+[   30.024279] Runner Transparent Forwarding (RTF) Module Init: v0.2 Aug 25 2022 10:54:23
+[   30.033372] rtf [pid-3006] [cpu-1]: proc cmd - host_inf wanbridge
+[   30.039754] DQNET [pid-3006] [cpu-1]: proc cmd - brcmtag_opcode uc 1
+[   30.046318] rtf [pid-3006] [cpu-1]: proc cmd - enable 1
+RG: Starting snmpd
+RG: Starting lattice with RG CM Originated support
+Start monitoring cm0
+Starting security monitor scripts
+starting pid 3575, tty '': '/bin/cttyhack /bin/loginscript.sh'
+Start monitoring Remote Connections
+DIAGMAN: Started with PID 3571
+Listening on UDP socket addr<ac1fff28> port<63391> sock_desc<4> for IPC commands.
+Setting up daemon listen socket<4> on port<63391>
+Listening on UDP socket addr<7f000001> port<63391> sock_desc<5> for IPC commands.
+Setting up daemon listen socket<5> on port<63391>
+Sending Crash Info to bfcResetReasonEventLog
+Start monitoring thermal level, set threshold to 70 ...
+Start monitoring Denial of Service 
+Debug option entered 
+
+ rmonitord: The remote monitor(rmonitord) Manager has started in User mode 
+Start monitoring connection track sessions, set threshold to 19660 ...
+Start monitoring UartRxCnt, beginning RxCnt set to 0 ...
+Start monitoring available memory, threshold set to 36449 ...
+Start monitoring Abnormal JTAG usage
+
+(none) login: rProgramStore Host (1): Waiting for eth interface 'privbr:0' to come up.
+             25 seconds elapsed
+rnonvolhost: Waiting for eth interface to come up. 25 seconds elapsed
+Timeout: No Response from 172.31.255.45
+ terminated unsuccessfully
+[   36.845873] privbr: port 1(priv0) entered blocking state
+[   36.851479] privbr: port 1(priv0) entered forwarding state
+[   36.858721] IPv6: ADDRCONF(NETDEV_CHANGE): privbr: link becomes ready
+[   51.982005] rtf [pid-3681] [cpu-1]: proc cmd - enable 1
+[   51.990602] DQNET [pid-3682] [cpu-0]: proc cmd - brcmtag_opcode uc 1
+rnonvolhost: remount ro partitio[   52.001531] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" started, PID 3683
+n to write dynamic nonvol
+[   52.015131] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" stops
+[   52.028828] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" started, PID 3684
+[   52.041461] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" stops
+[   52.054933] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" started, PID 3685
+[   52.067309] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" stops
+rnonvolhost: upd[   52.083421] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" started, PID 3686
+ated /mnt/cmnonvol/cm_dyn.bin
+[   52.093638] UBIFS (ubi5:0): background thread "ubifs_bgt5_0" started, PID 3687
+rnonvolhost: backed up to /mnt/cmnonvol_bak/cm_dyn.bin
+[   52.106745] UBIFS (ubi5:0): background thread "ubifs_bgt5_0" stops
+[   52.137122] UBIFS (ubi4:0): background thread "ubifs_bgt4_0" stops
+Timeout: No Response from 172.31.255.45
+ terminated unsuccessfully
+WAN interface state: RPC_EVENT_WANIF_OPER_STATE_BOOTED
+mdio_write: eth7 phy_id 13 reg 401e4038 <- 0
+mdio_write: eth7 phy_id 13 reg 401e4005 <- 8022
+mdio_write: eth7 phy_id 13 reg 40070000 <- 3200
+mdio_write: eth7 phy_id 13 reg 4021a83b <- a450
+mdio_write: eth7 phy_id 13 reg 4021a832 <- 6
+mdio_write: eth7 phy_id 13 reg 4021a8ec <- 2ff
+WAN interface state: RPC_EVENT_WANIF_OPER_STATE_NO_ENERGY_DETECTED
+WAN interface state: RPC_EVENT_WANIF_OPER_STATE_HTTP_IPSTACK_UPDATED
+iptables: No chain/target/match by that name.
+Set IPTABLES rules for RG WAN and RG LAN HTTP access
+BA [2178]: [cntrlProcess:859] CM state: Running
+MA [2167]: [cntrlProcess:778] CM state: Running
+WAN interface state: RPC_EVENT_WANIF_OPER_STATE_HTTP_IPSTACK_UPDATED
+Set IPTABLES rules for RG WAN and RG LAN HTTP access
+.1.3.6.1.4.1.4684.38.2.2.2.1.2.12161.1.1.21.0 = OID: .1.3.6.1.4.1.4684.38.2.2.2.1.9.1.3.1.1.2
+ executed successfully
+.1.3.6.1.4.1.4684.38.2.2.2.1.2.12161.1.1.22.0 = STRING: "RG reset cause:power_on, Crash detected:No, Crash type:No crash"
